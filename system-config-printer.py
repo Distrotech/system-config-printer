@@ -1138,7 +1138,11 @@ class GUI:
                 # Now reconnect because the server needs to reload.
                 self.reconnect ()
 
-        os.remove (tmpfname)
+        try:
+            os.remove (tmpfname)
+        except OSError:
+            pass
+
         try:
             self.populateList()
         except cups.HTTPError, (s,):
@@ -2085,7 +2089,7 @@ class GUI:
 
     def on_tvSMBBrowser_cursor_changed (self, view):
         store, iter = view.get_selection ().get_selected ()
-        if not iter:
+        if not iter or store.iter_depth(iter) != 2:
             return
 
         parent_iter = store.iter_parent (iter)
