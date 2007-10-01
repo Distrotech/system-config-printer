@@ -8536,7 +8536,7 @@ DTR/DSR (Hardware)</property>
 	  <property name="layout_style">GTK_BUTTONBOX_END</property>
 
 	  <child>
-	    <widget class="GtkButton" id="button15">
+	    <widget class="GtkButton" id="btnConnect">
 	      <property name="visible">True</property>
 	      <property name="can_default">True</property>
 	      <property name="has_default">True</property>
@@ -8734,6 +8734,7 @@ DTR/DSR (Hardware)</property>
 		  <property name="y_options">fill</property>
 		</packing>
 	      </child>
+	      <signal name="changed" handler="on_connect_servername_changed" last_modification_time="Mon, 01 Oct 2007 15:43:51 GMT"/>
 	    </widget>
 	  </child>
 	</widget>
