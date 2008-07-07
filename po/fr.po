@@ -15,19 +15,20 @@
 # Jonathan Ernst <jonathan@ernstfamily.ch>, 2007.
 # Canniot Thomas <thomas.canniot@mrtomlinux.org>, 2008.
 # Thomas Canniot <mrtom@fedoraproject.org>, 2008.
+# Mathieu Schopfer <mat.schopfer@bluewin.ch>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: s-c-printer.0.7.74.x_1_\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
-"POT-Creation-Date: 2008-06-20 17:21+0100\n"
-"PO-Revision-Date: 2008-03-22 15:30+0100\n"
-"Last-Translator: Thomas Canniot <mrtom@fedoraproject.org>\n"
-"Language-Team: Français <fedora-trans-fr@redhat.com>\n"
+"POT-Creation-Date: 2008-06-20 20:48+0000\n"
+"PO-Revision-Date: 2008-06-30 22:38+0200\n"
+"Last-Translator: Mathieu Schopfer <mat.schopfer@bluewin.ch>\n"
+"Language-Team: French <fedora-trans-fr@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;>\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: KAider 0.1\n"
 
 #: ../cupshelpers.py:27
 msgid "Idle"
@@ -1003,7 +1004,7 @@ msgstr "Nom"
 
 #: ../system-config-printer.glade.h:145
 msgid "New Clas_s"
-msgstr "Nouveau group_e"
+msgstr "Nouveau gr_oupe"
 
 #: ../system-config-printer.glade.h:148
 msgid "New _Printer"
@@ -1336,7 +1337,7 @@ msgstr "_Ne pas appliquer"
 
 #: ../system-config-printer.glade.h:239
 msgid "_Edit"
-msgstr "É_dition"
+msgstr "Édi_tion"
 
 #: ../system-config-printer.glade.h:240 ../applet.glade.h:10
 msgid "_File"
@@ -1344,11 +1345,11 @@ msgstr "_Fichier"
 
 #: ../system-config-printer.glade.h:241
 msgid "_Goto Server"
-msgstr "_Aller au serveur"
+msgstr "A_ller au serveur"
 
 #: ../system-config-printer.glade.h:242
 msgid "_Help"
-msgstr "Aid_e"
+msgstr "_Aide"
 
 #: ../system-config-printer.glade.h:243
 msgid "_Install"
@@ -1356,7 +1357,7 @@ msgstr "_Installer"
 
 #: ../system-config-printer.glade.h:244
 msgid "_Troubleshoot"
-msgstr ""
+msgstr "_Dépannage"
 
 #: ../system-config-printer.glade.h:245
 msgid "_Verify..."
@@ -1459,14 +1460,13 @@ msgid "Printer '%s' has no ink left."
 msgstr "La cartouche d'encre de l'imprimante « %s » est vide."
 
 #: ../statereason.py:89
-#, fuzzy
 msgid "Printer off-line"
-msgstr "Nom de l'imprimante"
+msgstr "Imprimante déconnectée"
 
 #: ../statereason.py:90
-#, fuzzy, python-format
+#, python-format
 msgid "Printer `%s' is currently off-line."
-msgstr "L'imprimante « %s » n'a plus de papier."
+msgstr "L'imprimante « %s » est déconnectée."
 
 #: ../statereason.py:91
 msgid "Not connected?"
@@ -1482,9 +1482,9 @@ msgid "Printer error"
 msgstr "Erreur de l'imprimante"
 
 #: ../statereason.py:94
-#, fuzzy, python-format
+#, python-format
 msgid "There is a problem on printer `%s'."
-msgstr "La porte de l'imprimante « %s » est ouverte."
+msgstr "Il y a un problème sur l'imprimante « %s »."
 
 #: ../statereason.py:105
 msgid "Printer report"
@@ -1501,38 +1501,44 @@ msgstr "Imprimante « %s » : « %s »."
 
 #: ../troubleshoot/__init__.py:42
 msgid "Printing troubleshooter"
-msgstr ""
+msgstr "Dépanneur de l'impression"
 
 #: ../troubleshoot/base.py:33
 msgid ""
 "To start this tool, select System->Administration->Printing from the main "
 "menu."
 msgstr ""
+"Pour démarrer cet outil, sélectionnez Système -> Administration -> "
+"Impression, dans le menu principal."
 
 #: ../troubleshoot/CheckLocalServerPublishing.py:28
 msgid "Server Not Exporting Printers"
-msgstr ""
+msgstr "Ce serveur n'exporte par les imprimantes"
 
 #: ../troubleshoot/CheckLocalServerPublishing.py:29
 msgid ""
 "Although one or more printers are marked as being shared, this print server "
 "is not exporting shared printers to the network."
 msgstr ""
+"Bien qu'une ou plusieurs imprimantes soient signalées comme étant partagées, "
+"ce serveur d'impression n'exporte aucune imprimante partagée vers le réseau."
 
 #: ../troubleshoot/CheckLocalServerPublishing.py:33
 msgid ""
 "Enable the 'Share published printers connected to this system' option in the "
 "server settings using the printing administration tool."
 msgstr ""
+"Activer l'option « Partager les imprimantes publiées connectés à ce système "
+"» dans les paramètres du serveur, en utilisant l'outil d'administration de "
+"l'impression."
 
 #: ../troubleshoot/CheckPPDSanity.py:45 ../applet.py:957
 msgid "Install"
 msgstr "Installer"
 
 #: ../troubleshoot/CheckPPDSanity.py:80
-#, fuzzy
 msgid "Invalid PPD File"
-msgstr "Fournir un fichier PPD"
+msgstr "Fichier PPD invalide"
 
 #: ../troubleshoot/CheckPPDSanity.py:89
 #, python-format
@@ -1540,172 +1546,177 @@ msgid ""
 "The PPD file for printer `%s' does not conform to the specification.  "
 "Possible reason follows:"
 msgstr ""
+"Le fichier PPD pour l'imprimante « %s » n'est pas conforme aux "
+"spécifications. Raison possible :"
 
 #. Perhaps cupstestppd is not in the path.
 #: ../troubleshoot/CheckPPDSanity.py:95
-#, fuzzy, python-format
+#, python-format
 msgid "There is a problem with the PPD file for printer `%s'."
-msgstr "Il y a eu un problème lors de la connexion au serveur CUPS."
+msgstr "Il y a un problème avec le fichier PPD pour l'imprimante « %s »."
 
 #: ../troubleshoot/CheckPPDSanity.py:105
-#, fuzzy
 msgid "Missing Printer Driver"
 msgstr "Pilote d'imprimante manquant"
 
 #: ../troubleshoot/CheckPPDSanity.py:108
-#, fuzzy, python-format
+#, python-format
 msgid "Printer `%s' requires the %s package but it is not currently installed."
 msgstr ""
-"L'imprimante « %s » a besoin du paquetage %s mais celui-ci n'est pas "
+"L'imprimante « %s » a besoin du paquet %s mais celui-ci n'est pas "
 "installé."
 
 #: ../troubleshoot/CheckPPDSanity.py:113
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Printer `%s' requires the `%s' program but it is not currently installed."
 msgstr ""
-"L'imprimante « %s » a besoin du paquetage %s mais celui-ci n'est pas "
+"L'imprimante « %s » a besoin du programme %s mais celui-ci n'est pas "
 "installé."
 
 #: ../troubleshoot/ChooseNetworkPrinter.py:29
-#, fuzzy
 msgid "Choose Network Printer"
-msgstr "Nouvelle imprimante"
+msgstr "Choisir une imprimante réseau"
 
 #: ../troubleshoot/ChooseNetworkPrinter.py:30
 msgid ""
 "Please select the network printer you are trying to use from the list below. "
 "If it does not appear in the list, select 'Not listed'."
 msgstr ""
+"Veuillez sélectionner l'imprimante réseau que vous essayez d'utiliser dans "
+"la liste ci-dessous. Si elle n'y apparait pas, choisissez « Non listée »."
 
 #: ../troubleshoot/ChooseNetworkPrinter.py:39
 #: ../troubleshoot/ChoosePrinter.py:40 ../troubleshoot/DeviceListed.py:38
-#, fuzzy
 msgid "Information"
-msgstr "Emplacement"
+msgstr "Informations"
 
 #: ../troubleshoot/ChooseNetworkPrinter.py:75
 #: ../troubleshoot/ChoosePrinter.py:64 ../troubleshoot/DeviceListed.py:70
-#, fuzzy
 msgid "Not listed"
-msgstr "Pas connecté(e)"
+msgstr "Non listée"
 
 #: ../troubleshoot/ChoosePrinter.py:30
-#, fuzzy
 msgid "Choose Printer"
-msgstr "Cloner l'imprimante"
+msgstr "Choisir une imprimante"
 
 #: ../troubleshoot/ChoosePrinter.py:31
 msgid ""
 "Please select the printer you are trying to use from the list below. If it "
 "does not appear in the list, select 'Not listed'."
 msgstr ""
+"Veuillez sélectionner l'imprimante que vous essayez d'utiliser dans "
+"la liste ci-dessous. Si elle n'y apparait pas, choisissez « Non listée »."
 
 #: ../troubleshoot/DeviceListed.py:30
-#, fuzzy
 msgid "Choose Device"
-msgstr "Modifier l'URI du périphérique"
+msgstr "Choisir un périphérique"
 
 #: ../troubleshoot/DeviceListed.py:31
 msgid ""
 "Please select the device you want to use from the list below. If it does not "
 "appear in the list, select 'Not listed'."
 msgstr ""
+"Veuillez choisir le périphérique que vous voulez utiliser dans la liste "
+"ci-dessous. Si elle n'y apparait pas, choisissez « Non listée »."
 
 #: ../troubleshoot/ErrorLogCheckpoint.py:30
 #: ../troubleshoot/ErrorLogFetch.py:30
 msgid "Debugging"
-msgstr ""
+msgstr "Débogage"
 
 #: ../troubleshoot/ErrorLogCheckpoint.py:31
 msgid ""
 "I would like to enable debugging output from the CUPS scheduler.  This may "
 "cause the scheduler to restart.  Click the button below to enable debugging."
 msgstr ""
+"Il serait souhaitable d'activer la sortie de débogage du planificateur CUPS. "
+"Le planificateur pourrait devoir redémarrer. Cliquez sur le bouton ci-"
+"dessous pour activer le débogage."
 
 #: ../troubleshoot/ErrorLogCheckpoint.py:35
 msgid "Enable Debugging"
-msgstr ""
+msgstr "Activer le débogage"
 
 #: ../troubleshoot/ErrorLogCheckpoint.py:166
 msgid "Debug logging enabled."
-msgstr ""
+msgstr "Journalisation de débogage activée."
 
 #: ../troubleshoot/ErrorLogCheckpoint.py:168
 msgid "Debug logging was already enabled."
-msgstr ""
+msgstr "La journalisation de débogage était déjà activée."
 
 #: ../troubleshoot/ErrorLogFetch.py:31
 msgid ""
 "I would like to disable debugging output from the CUPS scheduler.  This may "
 "cause the scheduler to restart.  Click the button below to disable debugging."
 msgstr ""
+"Il serait souhaitable de désactiver la sortie de débogage du planificateur "
+"CUPS. Le planificateur pourrait devoir redémarrer. Cliquez sur le bouton ci-"
+"dessous pour désactiver le débogage."
 
 #: ../troubleshoot/ErrorLogFetch.py:35
 msgid "Disable Debugging"
-msgstr ""
+msgstr "Désactiver le débogage"
 
 #: ../troubleshoot/ErrorLogFetch.py:140
 msgid "Debug logging disabled."
-msgstr ""
+msgstr "Journalisation de débogage désactivée."
 
 #: ../troubleshoot/ErrorLogParse.py:30
 msgid "Error log messages"
-msgstr ""
+msgstr "Messages d'erreur du journal"
 
 #: ../troubleshoot/ErrorLogParse.py:31
 msgid "There are messages in the error log."
-msgstr ""
+msgstr "Le journal d'erreur contient des messages."
 
 #: ../troubleshoot/LocalOrRemote.py:27
-#, fuzzy
 msgid "Printer Location"
-msgstr "Options de l'imprimante"
+msgstr "Emplacement de l'imprimante"
 
 #: ../troubleshoot/LocalOrRemote.py:28
-#, fuzzy
 msgid "Is the printer connected to this computer or available on the network?"
-msgstr "Une imprimante connectée au port parallèle."
+msgstr ""
+"Est-ce que l'imprimante connectée à cet ordinateur est disponible sur le "
+"réseau ?"
 
 #: ../troubleshoot/LocalOrRemote.py:30
-#, fuzzy
 msgid "Locally connected printer"
-msgstr "Voulez-vous réellement effacer %s ?"
+msgstr "Imprimante connectée localement"
 
 #: ../troubleshoot/LocalOrRemote.py:31
-#, fuzzy
 msgid "Network printer"
-msgstr "Nouvelle imprimante"
+msgstr "Imprimante réseau"
 
 #: ../troubleshoot/NetworkCUPSPrinterShared.py:28
 msgid "Queue Not Shared"
-msgstr ""
+msgstr "File non partagée"
 
 #: ../troubleshoot/NetworkCUPSPrinterShared.py:29
 msgid "The CUPS printer on the server is not shared."
-msgstr ""
+msgstr "L'imprimante CUPS sur le serveur n'est pas partagée."
 
 #: ../troubleshoot/PrinterStateReasons.py:29
-#, fuzzy
 msgid "Status Messages"
-msgstr "Message"
+msgstr "Messages de statut"
 
 #: ../troubleshoot/PrinterStateReasons.py:30
 msgid "There are status messages associated with this queue."
-msgstr ""
+msgstr "Des messages d'information sont associés à cette file d'attente."
 
 #: ../troubleshoot/PrinterStateReasons.py:53
 #, python-format
 msgid "The printer's state message is: `%s'."
-msgstr ""
+msgstr "Le message d'information de l'imprimante est : « %s »."
 
 #: ../troubleshoot/PrinterStateReasons.py:78
 msgid "Errors are listed below:"
-msgstr ""
+msgstr "Les erreurs sont listées ci-dessous :"
 
 #: ../troubleshoot/PrinterStateReasons.py:83
 msgid "Warnings are listed below:"
-msgstr ""
+msgstr "Les avertissements sont listés ci-dessous :"
 
 #: ../troubleshoot/PrintTestPage.py:35 ../applet.py:647
 msgid "Pending"
@@ -1728,24 +1739,25 @@ msgid "Completed"
 msgstr "Achevé"
 
 #: ../troubleshoot/PrintTestPage.py:50
-#, fuzzy
 msgid "Test Page"
-msgstr "Imprimer la page de test"
+msgstr "Page de test"
 
 #: ../troubleshoot/PrintTestPage.py:51
 msgid ""
 "Now print a test page.  If you are having problems printing a specific "
 "document, print that document now and mark the print job below."
 msgstr ""
+"Maintenant, imprimez une page de test. Si vous rencontrez des problèmes pour "
+"imprimer un document spécifique, imprimez-le maintenant et sélectionnez la "
+"tâche d'impression ci-dessous."
 
 #: ../troubleshoot/PrintTestPage.py:66
 msgid "Cancel All Jobs"
-msgstr ""
+msgstr "Annuler toutes les tâches d'impression"
 
 #: ../troubleshoot/PrintTestPage.py:72
-#, fuzzy
 msgid "Test"
-msgstr "Réinitialiser"
+msgstr "Test"
 
 #: ../troubleshoot/PrintTestPage.py:73 ../applet.py:97
 msgid "Job"
@@ -1762,82 +1774,89 @@ msgstr "État"
 #: ../troubleshoot/PrintTestPage.py:102
 msgid "Did the marked print jobs print correctly?"
 msgstr ""
+"Les tâches d'impression sélectionnées ont-elles été correctement imprimées ?"
 
 #: ../troubleshoot/PrintTestPage.py:109
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #: ../troubleshoot/PrintTestPage.py:110
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #: ../troubleshoot/PrintTestPage.py:317
 msgid "Error submitting test page"
-msgstr ""
+msgstr "Erreur lors de l'envoi d'une page de test"
 
 #: ../troubleshoot/QueueNotEnabled.py:57
 #: ../troubleshoot/QueueRejectingJobs.py:67
 #, python-format
 msgid "The reason given is: `%s'."
-msgstr ""
+msgstr "La raison invoquée est : « %s »."
 
 #: ../troubleshoot/QueueNotEnabled.py:59
 msgid "This may be due to the printer being disconnected or switched off."
 msgstr ""
+"Ceci est probablement dû à une imprimante qui a été déconnectée ou éteinte."
 
 #: ../troubleshoot/QueueNotEnabled.py:63
 msgid "Queue Not Enabled"
-msgstr ""
+msgstr "File non activée"
 
 #: ../troubleshoot/QueueNotEnabled.py:64
 #, python-format
 msgid "The queue `%s' is not enabled."
-msgstr ""
+msgstr "La file d'attente « %s » n'est pas activée."
 
 #: ../troubleshoot/QueueNotEnabled.py:72
 msgid ""
 "To enable it, select the `Enabled' checkbox in the `Settings' tab for the "
 "printer in the printer administration tool."
 msgstr ""
+"Pour l'activer, cochez la case « Activée » dans l'onglet « Paramètres » "
+"de l'imprimante depuis l'outil d'administration de l'impression."
 
 #: ../troubleshoot/QueueRejectingJobs.py:32
 msgid "Queue Rejecting Jobs"
-msgstr ""
+msgstr "La file d'attente n'accepte pas les tâches d'impression"
 
 #: ../troubleshoot/QueueRejectingJobs.py:64
 #, python-format
 msgid "The queue `%s' is rejecting jobs."
-msgstr ""
+msgstr "La file d'attente « %s » n'accepte pas les tâches d'impression."
 
 #: ../troubleshoot/QueueRejectingJobs.py:71
 msgid ""
 "To make the queue accept jobs, select the `Accepting Jobs' checkbox in the "
 "`Settings' tab for the printer in the printer administration tool."
 msgstr ""
+"Pour que la file d'attente accepte les tâches d'impression, cochez la case « "
+"Accepter les tâches d'impression » dans l'onglet « Paramètres » de "
+"l'imprimante depuis l'outil d'administration de l'impression."
 
 #: ../troubleshoot/RemoteAddress.py:27
-#, fuzzy
 msgid "Remote Address"
-msgstr "Imprimantes distantes"
+msgstr "Adresse distante"
 
 #: ../troubleshoot/RemoteAddress.py:28
 msgid ""
 "Please enter as many details as you can about the network address of this "
 "printer."
 msgstr ""
+"Veuillez fournir le plus d'informations possibles pour l'adresse réseau de "
+"cette imprimante."
 
 #: ../troubleshoot/RemoteAddress.py:36
-#, fuzzy
 msgid "Server name:"
-msgstr "Nom d'utilisateur :"
+msgstr "Nom du serveur :"
 
 #: ../troubleshoot/RemoteAddress.py:43
 msgid "Server IP address:"
-msgstr ""
+msgstr "Adresse IP du serveur :"
 
 #: ../troubleshoot/SchedulerNotRunning.py:28
 msgid "CUPS Service Stopped"
-msgstr ""
+msgstr "Service CUPS arrêté"
 
 #: ../troubleshoot/SchedulerNotRunning.py:29
 msgid ""
@@ -1845,15 +1864,17 @@ msgid ""
 "choose System->Administration->Services from the main menu and look for the "
 "`cups' service."
 msgstr ""
+"Le démon d'impression CUPS semble ne pas être en cours d'exécution. Pour "
+"l'activer, veuillez sélectionner Système -> Administration -> Services dans "
+"le menu principal et recherchez le service « cups »."
 
 #: ../troubleshoot/ServerFirewalled.py:27
 msgid "Check Server Firewall"
-msgstr ""
+msgstr "Vérifer le pare-feu du serveur"
 
 #: ../troubleshoot/ServerFirewalled.py:28
-#, fuzzy
 msgid "It is not possible to connect to the server."
-msgstr "Il y a eu un problème lors de la connexion au serveur CUPS."
+msgstr "Il n'est pas possible de se connecter au serveur."
 
 #: ../troubleshoot/ServerFirewalled.py:43
 #, python-format
@@ -1861,40 +1882,45 @@ msgid ""
 "Please check to see if a firewall or router configuration is blocking TCP "
 "port %d on server `%s'."
 msgstr ""
+"Veuillez vérifier que la configuration d'un pare-feu ou d'un routeur ne "
+"bloque pas le port TCP %d sur le serveur « %s »."
 
 #: ../troubleshoot/Shrug.py:27
 msgid "Sorry!"
-msgstr ""
+msgstr "Désolé !"
 
 #: ../troubleshoot/Shrug.py:28
 msgid ""
 "I have not been able to work out what the problem is, but I have collected "
 "some useful information to put in a bug report."
 msgstr ""
+"Impossible de trouver le problème, mais des informations utiles ont pu être "
+"collectées afin de rédiger un rapport de bug."
 
 #: ../troubleshoot/Welcome.py:41
-#, fuzzy
 msgid "Authentication"
-msgstr "<b>Authentification</b>"
+msgstr "Authentification"
 
 #: ../troubleshoot/Welcome.py:56
-#, fuzzy
 msgid "Password required"
-msgstr "Mise à jour requise"
+msgstr "Mot de passe requis"
 
 #: ../troubleshoot/Welcome.py:95
 msgid "Trouble-shooting Printing"
-msgstr ""
+msgstr "Dépannage des problèmes d'impression"
 
 #: ../troubleshoot/Welcome.py:97
 msgid ""
 "In the next few screens I will ask you some questions about your problem "
 "with printing. Based on your answers I will try to suggest a solution."
 msgstr ""
+"Dans les écrans suivants, des questions relatives à vos problèmes "
+"d'impression vont vous être posées. Une solution vous sera suggérée d'après "
+"vos réponses."
 
 #: ../troubleshoot/Welcome.py:101
 msgid "Click 'Forward' to begin."
-msgstr ""
+msgstr "Cliquez sur « Suivant » pour commencer."
 
 #: ../applet.py:100
 msgid "Size"
@@ -2049,3 +2075,4 @@ msgstr "Gèrer les tâches d'impression"
 #: ../my-default-printer.desktop.in.h:2
 msgid "Select default printer"
 msgstr "Sélectionner l'imprimante par défaut"
+
