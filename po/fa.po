@@ -1,22 +1,26 @@
+# translation of system-config-printer.0.7.82.x.po to Persian(fa)
 # Translation of printconf to Persian.
 # Copyright (C) 2003 Abbas Izad
 # Copyright (C) 2005 Sharif FarsiWeb, Inc.
+# Copyright (C) 2008 Amir Farsi.
 # This file is distributed under the same license as the printconf package.
 # Abbas Izad <abbasizad@hotmail.com>, 2003.
 # Meelad Zakaria <meelad@farsiweb.info>, 2005.
 # Roozbeh Pournader <roozbeh@farsiweb.info>, 2005.
+# Amir Farsi <afarsi@ymail.com>.2008.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: printconf\n"
+"Project-Id-Version: system-config-printer.0.7.82.x\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
-"POT-Creation-Date: 2008-06-27 18:04+0100\n"
-"PO-Revision-Date: 2005-04-18 12:02+0430\n"
-"Last-Translator: Meelad Zakaria <meelad@farsiweb.info>\n"
-"Language-Team: Persian <farsi@lists.sharif.edu>\n"
+"POT-Creation-Date: 2008-06-27 20:59+0000\n"
+"PO-Revision-Date: 2008-07-19 11:28+0330\n"
+"Last-Translator: Amir Farsi\n"
+"Language-Team: Persian(fa) <fedora-trans-fa@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../authconn.py:30 ../system-config-printer.glade.h:257
 #, fuzzy
@@ -43,7 +47,7 @@ msgstr ""
 
 #: ../cupshelpers.py:34 ../troubleshoot/PrintTestPage.py:35 ../applet.py:931
 msgid "Processing"
-msgstr ""
+msgstr "در حال پردازش"
 
 #: ../cupshelpers.py:35
 msgid "Busy"
@@ -61,120 +65,105 @@ msgstr ""
 #: ../troubleshoot/ChoosePrinter.py:89 ../troubleshoot/ChoosePrinter.py:90
 #: ../troubleshoot/DeviceListed.py:84 ../troubleshoot/DeviceListed.py:85
 #: ../applet.py:941
-#, fuzzy
 msgid "Unknown"
-msgstr "(نامعلوم)"
+msgstr "نامعلوم"
 
 #: ../my-default-printer.py:141 ../my-default-printer.desktop.in.h:1
-#, fuzzy
 msgid "Default Printer"
-msgstr "این شرح چاپگر است."
+msgstr "چاپگر پیش فرض"
 
 #: ../my-default-printer.py:145 ../my-default-printer.py:181
-#, fuzzy
 msgid "_Use System Default"
 msgstr "تنظیم به عنوان _پیش‌فرض"
 
 #: ../my-default-printer.py:146 ../my-default-printer.py:183
-#, fuzzy
 msgid "_Set Default"
-msgstr "_پیش‌فرض‌ها"
+msgstr "تعیین ـپیش فرض"
 
 #: ../my-default-printer.py:157 ../troubleshoot/PrintTestPage.py:73
 #: ../applet.py:140 ../applet.py:180
-#, fuzzy
 msgid "Printer"
-msgstr "چاپگر: "
+msgstr "چاپگر"
 
 #: ../my-default-printer.py:162 ../system-config-printer.py:2442
 #: ../troubleshoot/ChooseNetworkPrinter.py:37
 #: ../troubleshoot/ChoosePrinter.py:38
-#, fuzzy
 msgid "Location"
-msgstr "_کنش"
+msgstr "_مکان"
 
 #: ../optionwidgets.py:116
 msgid "Conflicts with:"
 msgstr ""
 
 #: ../system-config-printer.py:372
-#, fuzzy
 msgid "Server Settings"
-msgstr "گزینه‌های گرداننده"
+msgstr "تنظیمات سرویس دهنده"
 
 #: ../system-config-printer.py:378 ../system-config-printer.py:380
 msgid "Members of this class"
-msgstr ""
+msgstr "اعضای این کلاس"
 
 #: ../system-config-printer.py:379 ../system-config-printer.py:381
 msgid "Others"
-msgstr ""
+msgstr "دیگران"
 
 #: ../system-config-printer.py:382
-#, fuzzy
 msgid "Devices"
-msgstr "دستگاه"
+msgstr "دستگاه ها"
 
 #: ../system-config-printer.py:383
 msgid "Makes"
 msgstr ""
 
 #: ../system-config-printer.py:384
-#, fuzzy
 msgid "Models"
-msgstr "مدل"
+msgstr "مدل ها"
 
 #: ../system-config-printer.py:385
-#, fuzzy
 msgid "Drivers"
-msgstr "گرداننده"
+msgstr "گرداننده ها"
 
 #: ../system-config-printer.py:386 ../system-config-printer.glade.h:107
-#, fuzzy
 msgid "Downloadable Drivers"
-msgstr "گرداننده‌های موجود:"
+msgstr "راه اندازهای قابل دانلود"
 
 #: ../system-config-printer.py:387
-#, fuzzy
 msgid "Users"
-msgstr "کاربر"
+msgstr "کاربران"
 
 #: ../system-config-printer.py:414
 msgid "Automatic rotation"
-msgstr ""
+msgstr "چرخش خودکار"
 
 #: ../system-config-printer.py:578
 #, python-format
 msgid "Printer configuration - %s"
-msgstr "پیکربندی چاپگر ـ %s"
+msgstr "پیکربندی چاپگر - %s"
 
 #: ../system-config-printer.py:581
 #, python-format
 msgid "Connected to %s"
-msgstr ""
+msgstr "به %s متصل شد"
 
 #: ../system-config-printer.py:583 ../system-config-printer.py:1301
-#, fuzzy
 msgid "Not connected"
-msgstr "متصل به _طور محلی"
+msgstr "متصل نشد"
 
 #: ../system-config-printer.py:692
-#, fuzzy
 msgid "Local Printers"
-msgstr "ویرایش چاپگر محلی"
+msgstr "چاپگر های محلی"
 
 #: ../system-config-printer.py:693
 msgid "Local Classes"
-msgstr ""
+msgstr "کلاس های محلی"
 
 #: ../system-config-printer.py:694
-#, fuzzy
 msgid "Remote Printers"
-msgstr "چاپگر Jetdirect"
+msgstr "چاپگر های دور دست"
 
 #: ../system-config-printer.py:695
 msgid "Remote Classes"
-msgstr ""
+msgstr "کلاس های دور دست"
 
 #: ../system-config-printer.py:803
 #, python-format
@@ -182,15 +171,16 @@ msgid ""
 "Connecting to server:\n"
 "%s"
 msgstr ""
+"درحال اتصال به سرویس دهنده:\n"
+"%s"
 
 #: ../system-config-printer.py:1230
 msgid "Installable Options"
-msgstr ""
+msgstr "گزینه های قابل نصب"
 
 #: ../system-config-printer.py:1231 ../system-config-printer.glade.h:209
-#, fuzzy
 msgid "Printer Options"
-msgstr "گزینه‌های صافی"
+msgstr "گزینه های چاپگر"
 
 #: ../system-config-printer.py:1240
 msgid ""
@@ -202,63 +192,62 @@ msgstr ""
 #: ../system-config-printer.py:1269 ../system-config-printer.py:1285
 #: ../applet.py:313
 msgid "Not authorized"
-msgstr ""
+msgstr "شناخته نشد"
 
 #: ../system-config-printer.py:1270 ../applet.py:314
 msgid "The password may be incorrect."
-msgstr ""
+msgstr "رمز عبور ممکن است نا درست باشد."
 
 #: ../system-config-printer.py:1273 ../system-config-printer.py:1306
 #: ../applet.py:317
 msgid "CUPS server error"
-msgstr ""
+msgstr "خطای سرویس دهنده CUPS"
 
 #: ../system-config-printer.py:1274 ../troubleshoot/PrintTestPage.py:288
 #: ../applet.py:318
-#, fuzzy, python-format
+#, python-format
 msgid "There was an error during the CUPS operation: '%s'."
-msgstr "هنگام تلاش برای چاپ صفحه‌ی آزمایشی، خطایی پیش آمد."
+msgstr "در هنگام عمل CUPS خطایی رخ داد:'%s'."
 
 #: ../system-config-printer.py:1286
 msgid ""
 "The password may be incorrect, or the server may be configured to deny "
 "remote administration."
-msgstr ""
+msgstr "شاید رمز عبور نا درست است یا شاید سرویس دهنده برای جلوگیری از مدیریت راه دور تنظیم شده است."
 
 #: ../system-config-printer.py:1291
 msgid "Bad request"
-msgstr ""
+msgstr "دخواست بد"
 
 #: ../system-config-printer.py:1293
-#, fuzzy
 msgid "Not found"
-msgstr "متصل به _طور محلی"
+msgstr "یافت نشد"
 
 #: ../system-config-printer.py:1295
 msgid "Request timeout"
-msgstr ""
+msgstr "زمان درخواست تمام شد"
 
 #: ../system-config-printer.py:1297
 msgid "Upgrade required"
-msgstr ""
+msgstr "ارتقا لازم شده است"
 
 #: ../system-config-printer.py:1299
 msgid "Server error"
-msgstr ""
+msgstr "خطای سرویس دهنده"
 
 #: ../system-config-printer.py:1303
 #, python-format
 msgid "status %d"
-msgstr ""
+msgstr "وضعیت %d"
 
 #: ../system-config-printer.py:1307
 #, python-format
 msgid "There was an HTTP error: %s."
-msgstr ""
+msgstr "آنجا یک خطای HTTP وجود داشت: %s."
 
 #: ../system-config-printer.py:1331
 msgid "This will delete this class!"
-msgstr ""
+msgstr "این (عمل)، این کلاس را حذف خواهد کرد!"
 
 #: ../system-config-printer.py:1332
 msgid "Proceed anyway?"
@@ -266,23 +255,23 @@ msgstr ""
 
 #: ../system-config-printer.py:1558 ../system-config-printer.py:1592
 msgid "Submitted"
-msgstr ""
+msgstr "فرستاده شد"
 
 #: ../system-config-printer.py:1559
 #, python-format
 msgid "Test page submitted as job %d"
-msgstr ""
+msgstr "این صفحه بصورت کار %d   فرستاده شد"
 
 #: ../system-config-printer.py:1570 ../system-config-printer.py:1602
 #: ../system-config-printer.py:3575
 msgid "Not possible"
-msgstr ""
+msgstr "در دسترس(موجود) نیست"
 
 #: ../system-config-printer.py:1571 ../system-config-printer.py:1603
 msgid ""
 "The remote server did not accept the print job, most likely because the "
 "printer is not shared."
-msgstr ""
+msgstr "سرویس دهنده دور دست کار چاپگر را قبول نکرد. به احتمال زیاد به خاطر اینگه چاپگر به اشتراک گذاشته نشده است."
 
 #: ../system-config-printer.py:1593
 #, python-format
@@ -294,21 +283,16 @@ msgid "Error"
 msgstr "خطا"
 
 #: ../system-config-printer.py:1690
-#, fuzzy
 msgid "There was a problem connecting to the CUPS server."
-msgstr ""
-"اشکالی در فرستادن %s به\n"
-"صف «%s» وجود داشت:\n"
-"\n"
+msgstr "در آنجا یک اشکال در اتصال به سرویس دهنده CUPS وجود داشت."
 
 #: ../system-config-printer.py:1743
-#, fuzzy
 msgid "This is the default printer"
-msgstr "این شرح چاپگر است."
+msgstr "این چاپگر پیش فرض است."
 
 #: ../system-config-printer.py:1747
 msgid "No default printer set."
-msgstr ""
+msgstr "چاپگر پیش فرض تعیین نشده است."
 
 #: ../system-config-printer.py:1849
 #, python-format
@@ -316,31 +300,29 @@ msgid "Option '%s' has value '%s' and cannot be edited."
 msgstr ""
 
 #: ../system-config-printer.py:1897
-#, fuzzy
 msgid "Cancel Tests"
-msgstr "انصراف"
+msgstr "لغو آزمایش ها"
 
 #. Not more than 25 characters
 #: ../system-config-printer.py:1901 ../system-config-printer.glade.h:208
 #: ../troubleshoot/PrintTestPage.py:61
-#, fuzzy
 msgid "Print Test Page"
-msgstr "یادداشت‌های چاپگر:"
+msgstr "چاپ صفحه آزمایشی"
 
 #: ../system-config-printer.py:2132
-#, fuzzy, python-format
+#, python-format
 msgid "Really delete printer %s?"
-msgstr "واقعاً «%s» حذف شود؟"
+msgstr "واقعاً چاپگر %s حذف شود؟"
 
 #: ../system-config-printer.py:2134
-#, fuzzy, python-format
+#, python-format
 msgid "Really delete class %s?"
-msgstr "واقعاً «%s» حذف شود؟"
+msgstr "واقعاً کلاس %s حذف شود؟"
 
 #. SMB list columns
 #: ../system-config-printer.py:2414
 msgid "Share"
-msgstr "اشتراک"
+msgstr "اشتراک گذاری"
 
 #: ../system-config-printer.py:2420
 msgid "Comment"
@@ -359,98 +341,89 @@ msgstr ""
 
 #: ../system-config-printer.py:2459
 msgid "All files (*)"
-msgstr ""
+msgstr "همه پرونده ها(*)"
 
 #: ../system-config-printer.py:2494 ../system-config-printer.py:3834
 #: ../system-config-printer.py:3868
-#, fuzzy
 msgid "Search"
-msgstr "هشدار"
+msgstr "جستجو"
 
 #: ../system-config-printer.py:2497 ../system-config-printer.glade.h:155
-#, fuzzy
 msgid "New Printer"
-msgstr "چاپگر:"
+msgstr "چاپگر جدیپد"
 
 #: ../system-config-printer.py:2507 ../system-config-printer.glade.h:154
 msgid "New Class"
-msgstr ""
+msgstr "کلاس جدید"
 
 #: ../system-config-printer.py:2512
 msgid "Change Device URI"
-msgstr ""
+msgstr "تغییر URI دستگاه"
 
 #: ../system-config-printer.py:2527
-#, fuzzy
 msgid "Change Driver"
-msgstr "تغییر نوع"
+msgstr "تغییر راه انداز"
 
 #: ../system-config-printer.py:2632 ../system-config-printer.py:2858
 #: ../system-config-printer.py:3034 ../system-config-printer.py:3857
-#, fuzzy
 msgid "Searching"
-msgstr "هشدار"
+msgstr "در حال جستجو"
 
 #: ../system-config-printer.py:2633 ../system-config-printer.py:2859
-#, fuzzy
 msgid "Searching for drivers"
-msgstr "مشخصات به‌اشتراک‌گذاری"
+msgstr "در حال جستجو برای راه اندازها"
 
 #: ../system-config-printer.py:3035
-#, fuzzy
 msgid "Searching for printers"
-msgstr "مشخصات به‌اشتراک‌گذاری"
+msgstr "در حال جستجو برای چاپگر ها"
 
 #: ../system-config-printer.py:3253
 msgid "Other"
-msgstr ""
+msgstr "دیگر"
 
 #: ../system-config-printer.py:3255
 msgid " (Current)"
-msgstr ""
+msgstr "(فعلی)"
 
 #: ../system-config-printer.py:3281 ../system-config-printer.py:3542
 msgid "Scanning..."
-msgstr ""
+msgstr "در حال جستجو..."
 
 #: ../system-config-printer.py:3453 ../system-config-printer.py:3520
-#, fuzzy
 msgid "Verified"
-msgstr "(مشخص شده)"
+msgstr "مشخص شده"
 
 #: ../system-config-printer.py:3454 ../system-config-printer.py:3521
 msgid "This print share is accessible."
-msgstr ""
+msgstr "اشتراک این چاپگر قابل دسترسی است"
 
 #: ../system-config-printer.py:3461 ../system-config-printer.py:3527
 msgid "Inaccessible"
-msgstr ""
+msgstr "غیر قابل دسترسی"
 
 #: ../system-config-printer.py:3462 ../system-config-printer.py:3528
 msgid "This print share is not accessible."
-msgstr ""
+msgstr "اشتراک این چاپگر غیر قابل دسترسی است."
 
 #: ../system-config-printer.py:3576
 msgid "It is not possible to obtain a list of queues from this host."
 msgstr ""
 
 #: ../system-config-printer.py:3580
-#, fuzzy
 msgid "No queues"
-msgstr "صف _جدید"
+msgstr "فاقد ـصف"
 
 #: ../system-config-printer.py:3581
-#, fuzzy
 msgid "There are no queues available."
-msgstr "هیچ گزینه‌ای برای این گرداننده موجود نیست."
+msgstr "هیچ صفی موجود نیست."
 
 #: ../system-config-printer.py:3638
 msgid "A printer connected to the parallel port."
-msgstr ""
+msgstr "یک چاپگر به درگاه موازی متصل شد."
 
 #: ../system-config-printer.py:3640
 msgid "A printer connected to a USB port."
-msgstr ""
+msgstr "یک چاپگر به درگاه USB متصل شد."
 
 #: ../system-config-printer.py:3642
 msgid ""
@@ -991,8 +964,7 @@ msgid "Flow Control"
 msgstr ""
 
 #: ../system-config-printer.glade.h:117
-msgid ""
-"For the printer you have selected there are drivers available for download."
+msgid "For the printer you have selected there are drivers available for download."
 msgstr ""
 
 #: ../system-config-printer.glade.h:118
@@ -1725,10 +1697,10 @@ msgstr ""
 
 #: ../troubleshoot/CheckPPDSanity.py:113
 #, fuzzy, python-format
-msgid ""
-"Printer `%s' requires the `%s' program but it is not currently installed."
+msgid "Printer `%s' requires the `%s' program but it is not currently installed."
 msgstr ""
-"صف‌های چاپ NCP به برنامه‌ی «nprint» احتیاج دارند، که به نظر نمی‌رسد نصب شده باشد."
+"صف‌های چاپ NCP به برنامه‌ی «nprint» احتیاج دارند، که به نظر نمی‌رسد نصب شده "
+"باشد."
 
 #: ../troubleshoot/ChooseNetworkPrinter.py:29
 #, fuzzy
@@ -2268,1122 +2240,3 @@ msgstr ""
 msgid "Select default printer"
 msgstr "این شرح چاپگر است."
 
-#, fuzzy
-#~ msgid "Password required"
-#~ msgstr "گذرواژه:"
-
-#, fuzzy
-#~ msgid "_Goto Server"
-#~ msgstr "کارگزار"
-
-#, fuzzy
-#~ msgid "Queue Not Accepting Jobs"
-#~ msgstr "گزینه‌های صف"
-
-#, fuzzy
-#~ msgid "Printer's state reasons:"
-#~ msgstr "یادداشت‌های چاپگر:"
-
-#, fuzzy
-#~ msgid "Click the button to print a test page."
-#~ msgstr "آیا می‌خواهید یک صفحه‌ی آزمایشی چاپ کنید؟"
-
-#, fuzzy
-#~ msgid "3"
-#~ msgstr "A3"
-
-#, fuzzy
-#~ msgid "Printername"
-#~ msgstr "مدل چاپگر"
-
-#~ msgid "About"
-#~ msgstr "درباره"
-
-#~ msgid "Apply"
-#~ msgstr "اعمال"
-
-#, fuzzy
-#~ msgid "Change PPD"
-#~ msgstr "تغییر نوع"
-
-#, fuzzy
-#~ msgid "Comments: "
-#~ msgstr "توضیح"
-
-#, fuzzy
-#~ msgid "Device"
-#~ msgstr "دستگاه"
-
-#, fuzzy
-#~ msgid "Driver"
-#~ msgstr "گرداننده"
-
-#, fuzzy
-#~ msgid "Make Default Printer"
-#~ msgstr "این شرح چاپگر است."
-
-#, fuzzy
-#~ msgid "System-Config-Printer %s"
-#~ msgstr "پیکربندی چاپگرها"
-
-#, fuzzy
-#~ msgid "Specify default job options."
-#~ msgstr "تنظیم مجدد به گزینه‌های پیش‌فرض"
-
-#, fuzzy
-#~ msgid "localhost"
-#~ msgstr "محلی"
-
-#, fuzzy
-#~ msgid "smb://"
-#~ msgstr "smb"
-
-#~ msgid "Ok"
-#~ msgstr "تأیید"
-
-#~ msgid "Info"
-#~ msgstr "اطلاعات"
-
-#~ msgid "Exit"
-#~ msgstr "خروج"
-
-#~ msgid ""
-#~ "You have made changes, would you like to save them? If you say no, your "
-#~ "changes will be lost."
-#~ msgstr ""
-#~ "شما تغییراتی داده‌اید، آیا می‌خواهید آنها را ذخیره کنید؟ اگر بگویید نه، "
-#~ "تغییرات شما از دست خواهند رفت."
-
-#~ msgid "Finish Making New Queue"
-#~ msgstr "پایان ساختن صف جدید"
-
-#~ msgid "About to create the following queue:"
-#~ msgstr "در آستانه‌ی ایجاد صف زیر:"
-
-#~ msgid "Back"
-#~ msgstr "عقب"
-
-#~ msgid "Type:"
-#~ msgstr "نوع:"
-
-#~ msgid "Lpd Queue:"
-#~ msgstr "صف Lpd:"
-
-#~ msgid "Share:"
-#~ msgstr "اشتراک:"
-
-#~ msgid "Workgroup:"
-#~ msgstr "گروه کاری:"
-
-#~ msgid "User:"
-#~ msgstr "کاربر:"
-
-#~ msgid "Port:"
-#~ msgstr "درگاه:"
-
-#~ msgid "Driver:"
-#~ msgstr "گرداننده:"
-
-#~ msgid "Name and Type"
-#~ msgstr "نام و نوع"
-
-#~ msgid "Next"
-#~ msgstr "بعدی"
-
-#~ msgid "Queue Type"
-#~ msgstr "نوع صف"
-
-#~ msgid ""
-#~ "The name \"%s\" is bad. Please choose a name of the form [a-zA-Z][a-zA-Z0-"
-#~ "9_-]*."
-#~ msgstr ""
-#~ "نام «%s» مناسب نیست. لطفاً نامی به شکل ‎[a-zA-Z][a-zA-Z0-9]‎*‎ را انتخاب کنید."
-
-#~ msgid "The name \"%s\" is already in use. Please choose a different name."
-#~ msgstr "نام «%s» از قبل استفاده شده است. لطفاً نام دیگری انتخاب کنید."
-
-#~ msgid "Custom"
-#~ msgstr "سفارشی"
-
-#~ msgid ""
-#~ "Pick the printer device from the list, or enter it using \"Custom\" below."
-#~ msgstr ""
-#~ "دستگاه چاپگر را از فهرست انتخاب کرده، یا آن را با استفاده از «سفارشی» در "
-#~ "زیر وارد کنید."
-
-#~ msgid "Specify Device:"
-#~ msgstr "دستگاه را مشخص کنید:"
-
-#~ msgid "Specify the device to use."
-#~ msgstr "دستگاهی را که می‌خواهید استفاده شود، مشخص کنید."
-
-#~ msgid "Device File"
-#~ msgstr "پرونده‌ی دستگاه"
-
-#~ msgid "Enter the LPD server and queue to use."
-#~ msgstr "کارگزار LPD و صفی را که می‌خواهید استفاده شود، وارد کنید."
-
-#~ msgid "LPD Data"
-#~ msgstr "داده‌های LPD"
-
-#~ msgid "You must specify a server."
-#~ msgstr "باید یک کارگزار مشخص کنید."
-
-#~ msgid "Enter the SMB share to use."
-#~ msgstr "اشتراک SMB را که می‌خواهید استفاده شود، وارد کنید."
-
-#~ msgid "Workgroup"
-#~ msgstr "گروه کاری"
-
-#~ msgid "Passwd"
-#~ msgstr "گذرواژه"
-
-#~ msgid "Windows Printer (SMB) Data"
-#~ msgstr "داده‌های چاپگر ویندوزی (SMB)"
-
-#~ msgid "You must specify a SMB share to print to."
-#~ msgstr "باید یک اشتراک SMB مشخص کنید تا در آن چاپ شود."
-
-#~ msgid "Enter the NCP server and queue to use."
-#~ msgstr "کارگزار NCP و صفی را که می‌خواهید استفاده شود، وارد کنید."
-
-#~ msgid "Novell Netware Printer (NCP) Data"
-#~ msgstr "داده‌های چاپگر نت‌ویر نوول (NCP)"
-
-#~ msgid "You must specify an NCP server to print to."
-#~ msgstr "باید یک کارگزار NCP مشخص کنید تا در آن چاپ شود."
-
-#~ msgid "You must specify a queue on the NCP server to print to."
-#~ msgstr "شما باید صفی روی کارگزار NCP مشخص کنید تا در آن چاپ شود."
-
-#~ msgid "Enter the Jetdirect ip and port to use."
-#~ msgstr "نشانی IP و درگاه Jetdirect را که می‌خواهید استفاده کنید، وارد کنید."
-
-#~ msgid "Ip"
-#~ msgstr "‏IP"
-
-#~ msgid "Port"
-#~ msgstr "درگاه"
-
-#~ msgid "Jetdirect (JETDIRECT) Data"
-#~ msgstr "داده‌های Jetdirect ‏(JETDIRECT)"
-
-#~ msgid "You must specify the ip address of a JetDirect printer."
-#~ msgstr "باید نشانی IP یک چاپگر JetDirect را مشخص کنید."
-
-#~ msgid "Queue Driver"
-#~ msgstr "گرداننده‌ی صف"
-
-#~ msgid "Select the Driver to use with this Queue."
-#~ msgstr "گرداننده‌ای را که با این صف استفاده می‌شود، انتخاب کنید"
-
-#~ msgid "You must specify a driver."
-#~ msgstr "باید یک گرداننده مشخص کنید."
-
-#~ msgid "Edit Queue"
-#~ msgstr "ویرایش صف"
-
-#~ msgid "Names"
-#~ msgstr "نام‌ها"
-
-#~ msgid "Type"
-#~ msgstr "نوع"
-
-#~ msgid "Done"
-#~ msgstr "انجام شد"
-
-#~ msgid "Name:"
-#~ msgstr "نام:"
-
-#~ msgid "Aliases:"
-#~ msgstr "نام‌های مستعار:"
-
-#~ msgid "Printer Device:"
-#~ msgstr "دستگاه چاپگر:"
-
-#~ msgid "Edit Name and Aliases"
-#~ msgstr "ویرایش نام و نام‌های مستعار"
-
-#~ msgid "Add Alias"
-#~ msgstr "اضافه کردن نام مستعار"
-
-#~ msgid "Edit Alias"
-#~ msgstr "ویرایش نام مستعار"
-
-#~ msgid "Delete Alias"
-#~ msgstr "حذف نام مستعار"
-
-#~ msgid "Alias:"
-#~ msgstr "نام مستعار:"
-
-#~ msgid "Add an Alias"
-#~ msgstr "افزودن یک نام مستعار"
-
-#~ msgid "Edit the alias"
-#~ msgstr "ویرایش کردن نام مستعار"
-
-#~ msgid "You must select an alias to edit."
-#~ msgstr "باید یک نام مستعار انتخاب کنید تا ویرایش شود."
-
-#~ msgid "You must select an alias to delete."
-#~ msgstr "باید یک نام مستعار انتخاب کنید تا حذف شود."
-
-#~ msgid "Strict RFC1179"
-#~ msgstr "RFC 1179 اکید"
-
-#~ msgid "Translate \\n->\\r\\n"
-#~ msgstr "ترجمه‌ی ‎\\n به ‎\\r\\n"
-
-#~ msgid "Edit Driver"
-#~ msgstr "ویرایش گرداننده"
-
-#~ msgid "Edit Driver Options"
-#~ msgstr "ویرایش گزینه‌های گرداننده"
-
-#~ msgid "Edit %s"
-#~ msgstr "ویرایش %s"
-
-#~ msgid "Integer: Min %s | Max %s"
-#~ msgstr "عدد صحیح: حداقل %s | حداکثر %s"
-
-#~ msgid "Value must be a number"
-#~ msgstr "مقدار باید عدد باشد"
-
-#~ msgid "Float: Min %s | Max %s"
-#~ msgstr "عدد اعشاری: حداقل %s | حداکثر %s"
-
-#~ msgid "US Letter"
-#~ msgstr "نامه‌‌ی امریکایی"
-
-#~ msgid "Tabloid"
-#~ msgstr "نیم‌ورق روزنامه‌ای"
-
-#~ msgid "Ledger"
-#~ msgstr "دفترکل"
-
-#~ msgid "Legal"
-#~ msgstr "حقوقی"
-
-#~ msgid "Statement"
-#~ msgstr "بیانیه"
-
-#~ msgid "Executive"
-#~ msgstr "حکم"
-
-#~ msgid "A4"
-#~ msgstr "A4"
-
-#~ msgid "A5"
-#~ msgstr "A5"
-
-#~ msgid "B4"
-#~ msgstr "B4"
-
-#~ msgid "B5"
-#~ msgstr "B5"
-
-#~ msgid "Folio"
-#~ msgstr "رحلی"
-
-#~ msgid "Quatro"
-#~ msgstr "ربعی"
-
-#~ msgid "10x14"
-#~ msgstr "۱۰×۱۴"
-
-#~ msgid "Test %s"
-#~ msgstr "آزمایش %s"
-
-#~ msgid ""
-#~ "You have made changes, would you like to save them?\n"
-#~ "If you say no, you will not be able to print test pages."
-#~ msgstr ""
-#~ "شما تغییراتی داده‌اید، آیا می‌خواهید آنها را ذخیره کنید؟\n"
-#~ "اگر بگویید نه، نخواهید توانست صفحات آزمایشی را چاپ کنید."
-
-#~ msgid "Sent %s to \"%s\"."
-#~ msgstr "‏%s به «%s» فرستاده شد."
-
-#~ msgid "You must select a printer queue to delete."
-#~ msgstr "باید یک صف چاپگر را انتخاب کنید تا حذف شود."
-
-#~ msgid "You cannot delete an imported printer."
-#~ msgstr "نمی‌توانید یک چاپگر وارداتی را حذف کنید."
-
-#~ msgid "Confirm Delete"
-#~ msgstr "تصدیق حذف"
-
-#~ msgid "Aliases"
-#~ msgstr "نام‌های مستعار"
-
-#~ msgid "New"
-#~ msgstr "جدید"
-
-#~ msgid "Delete"
-#~ msgstr "حذف کردن"
-
-#~ msgid "You must select a printer queue to edit."
-#~ msgstr "باید یک صف چاپگر را انتخاب کنید تا ویرایش شود."
-
-#~ msgid ""
-#~ "This imported printer is protected from overrides. You can not edit it."
-#~ msgstr ""
-#~ "این چاپگر وارداتی در مقابل تنظیمات تحت‌الشعاع قرار دهنده محافظت شده است. "
-#~ "شما نمی‌توانید آن را ویرایش کنید."
-
-#~ msgid "Override?"
-#~ msgstr "تحت‌الشعاع قرار بگیرد؟"
-
-#~ msgid "This is an imported printer. Do you want to create a local override?"
-#~ msgstr ""
-#~ "این یک چاپگر وارد شده است. آیا می‌خواهید یک دسته تنظیمات تحت‌الشعاع قرار "
-#~ "دهنده‌ی محلی ایجاد کنید؟"
-
-#~ msgid "You must select a queue to print to."
-#~ msgstr "باید یک صف را  انتخاب کنید تا در آن چاپ شود."
-
-#~ msgid "Initializing alchemist edit environment ..."
-#~ msgstr "در حال راه‌اندازی محیط ویرایش alchemist ..."
-
-#~ msgid "Initializing linux printing database ..."
-#~ msgstr "در حال راه‌اندازی پایگاه‌داده‌ی چاپ لینوکس ..."
-
-#~ msgid "Importing CUPS queues ..."
-#~ msgstr "در حال وارد کردن صف‌های CUPS ..."
-
-#~ msgid ""
-#~ "Failed to parse alchemist context: \n"
-#~ "%s"
-#~ msgstr ""
-#~ "تجزیه‌ی مفاد alchemist شکست خورد: \n"
-#~ "%s"
-
-#~ msgid "Invalid printconf context"
-#~ msgstr "مفاد نامعتبر printconf"
-
-#~ msgid "\"%s\" is not a valid queue name."
-#~ msgstr "«%s» نام صف معتبری نیست."
-
-#~ msgid "Need device, make and model.\n"
-#~ msgstr "دستگاه، سازنده، و مدل لازم است.\n"
-
-#~ msgid "add-local: queue name '%s' not unique\n"
-#~ msgstr "‏add-local: نام صف «%s» یگانه نیست\n"
-
-#~ msgid "add-local: no suitable name available\n"
-#~ msgstr "‏add-local: نام مناسبی موجود نیست\n"
-
-#~ msgid "add-local: No information available about %s %s\n"
-#~ msgstr "‏add-local: اطلاعاتی درباره‌ی %s %s موجود نیست\n"
-
-#~ msgid "Now run printconf-backend (or restart lpd service)."
-#~ msgstr ""
-#~ "اکنون printconf-backend را اجرا کنید (یا سرویس lpd را راه‌اندازی مجدد "
-#~ "کنید)."
-
-#~ msgid "You must run printconf-tui as root."
-#~ msgstr "باید printconf-tui را با root اجرا کنید."
-
-#~ msgid "Conflicting commands: %s and %s"
-#~ msgstr "مغایرت فرمان‌ها: %s و %s"
-
-#~ msgid "No handler for command: "
-#~ msgstr "متصدی‌ای برای فرمان وجود ندارد "
-
-#~ msgid "You must be root to run this program.\n"
-#~ msgstr "برای اجرای این برنامه باید root باشید.\n"
-
-#~ msgid "Queue name"
-#~ msgstr "نام صف"
-
-#~ msgid ""
-#~ "Do you want to save the changes\n"
-#~ "you made to your printer configuration?"
-#~ msgstr ""
-#~ "آیا می‌خواهید تغییراتی را که در\n"
-#~ "پیکربندی چاپگر خود داده‌اید ذخیره کنید؟"
-
-#~ msgid "_Don't save"
-#~ msgstr "ذخیره _نشود"
-
-#~ msgid "_Save"
-#~ msgstr "_ذخیره"
-
-#~ msgid "Browsed queues"
-#~ msgstr "صف‌های مرور شده"
-
-#~ msgid ""
-#~ "Loading printer information.\n"
-#~ "Please wait..."
-#~ msgstr ""
-#~ "در حال بارکردن اطلاعات چاپگر.\n"
-#~ "لطفاً صبر کنید..."
-
-#~ msgid "Notes from the Linux Printing Database"
-#~ msgstr "یادداشت‌هایی از پایگاه‌داده‌ی چاپ لینوکس"
-
-#~ msgid "Driver notes:"
-#~ msgstr "یادداشتهای گرداننده:"
-
-#~ msgid "Generic (click to select manufacturer)"
-#~ msgstr "عام (برای انتخاب سازنده کلیک کنید)‏"
-
-#~ msgid ""
-#~ "You are changing an option\n"
-#~ "that has no effect in the print\n"
-#~ "spooler you are using (%s)."
-#~ msgstr ""
-#~ "شما دارید گزینه‌ای را تغییر می‌دهید که\n"
-#~ "هیچ تأثیری در قرقره‌ی چاپی که\n"
-#~ "از آن استفاده می‌کنید (%s) ندارد."
-
-#~ msgid ""
-#~ "Applying changes.\n"
-#~ "Please wait..."
-#~ msgstr ""
-#~ "در حال اِعمال تغییرات.\n"
-#~ "لطفاً صبر کنید..."
-
-#~ msgid "Failed to write queues."
-#~ msgstr "نوشتن صف‌ها شکست خورد."
-
-#~ msgid ""
-#~ "Sent %s\n"
-#~ "to '%s' queue.  Does it look okay?"
-#~ msgstr ""
-#~ "‏%s به صف\n"
-#~ "«‏%s» فرستاده شد.  آیا درست به نظر می‌رسد؟"
-
-#~ msgid "'%s' does not look like a PPD file."
-#~ msgstr "‏«%s» شبیه پرونده‌های PDD نیست."
-
-#~ msgid "File cannot be opened for reading."
-#~ msgstr "نمی‌توان پرونده را برای خواندن باز کرد."
-
-#~ msgid "PPD imported."
-#~ msgstr "PPD وارد شد."
-
-#~ msgid "PPD import failed."
-#~ msgstr "وارد کردن PPD شکست خورد."
-
-#~ msgid "Invalid name"
-#~ msgstr "نام نامعتبر"
-
-#~ msgid "There is already a queue with that name."
-#~ msgstr "صفی با این نام از قبل وجود دارد."
-
-#~ msgid "An existing queue has an alias of that name."
-#~ msgstr "این نام، نام مستعار یکی از صف‌های موجود است."
-
-#~ msgid "'%s' does not exist, or is not writable."
-#~ msgstr "‏«%s» وجود ندارد، یا قابل نوشتن نیست."
-
-#~ msgid "Custom device"
-#~ msgstr "دستگاه سفارشی"
-
-#~ msgid "You must select a device."
-#~ msgstr "شما باید دستگاهی را انتخاب کنید."
-
-#~ msgid "You must specify a path."
-#~ msgstr "شما باید مسیری را مشخص کنید."
-
-#~ msgid "You must specify a queue."
-#~ msgstr "شما باید صفی را مشخص کنید."
-
-#~ msgid "You must choose an SMB share to print to."
-#~ msgstr "شما باید یک اشتراک SMB انتخاب کنید تا در آن چاپ شود."
-
-#~ msgid "You must choose a share, not a host."
-#~ msgstr "شما باید یک اشتراک انتخاب کنید، نه یک میزبان."
-
-#~ msgid "You must specify an SMB share to print to."
-#~ msgstr "شما باید یک اشتراک SMB مشخص کنید تا در آن چاپ شود."
-
-#~ msgid "You must specify a queue on the NCP server."
-#~ msgstr "شما باید صفی روی کارگزار NCP مشخص کنید."
-
-#~ msgid "You must specify a JetDirect printer to print to."
-#~ msgstr "شما باید یک چاپگر JetDirect مشخص کنید تا در آن چاپ شود."
-
-#~ msgid "You must specify an IP port number."
-#~ msgstr "شما باید شماره‌ی درگاه IP را مشخص کنید."
-
-#~ msgid "Select the printer manufacturer and model."
-#~ msgstr "سازنده و مدل چاپگر را انتخاب کنید."
-
-#~ msgid ""
-#~ "Select the printer manufacturer and model. Depending on how the remote "
-#~ "queue is configured, you may need to select the generic PostScript option "
-#~ "here."
-#~ msgstr ""
-#~ "سازنده و مدل چاپگر را انتخاب کنید. بسته به چگونگی پیکربندیِ صفِ راهِ دور، "
-#~ "ممکن است لازم باشد که در اینجا گزینه‌ی پست‌اسکریپت عمومی را انتخاب کنید."
-
-#~ msgid "Type: "
-#~ msgstr "نوع: "
-
-#~ msgid "Queue: "
-#~ msgstr "صف: "
-
-#~ msgid "Port: "
-#~ msgstr "درگاه: "
-
-#~ msgid ""
-#~ "Would you like to print a test page?\n"
-#~ "Answering 'yes' will apply all changes\n"
-#~ "and print a test page to this printer."
-#~ msgstr ""
-#~ "آیا می‌خواهید یک صفحه‌ی آزمایشی چاپ کنید؟\n"
-#~ "پاسخ «بله» همه‌ی تغییرات را اعمال خواهد کرد\n"
-#~ "و یک صفحه‌ی آزمایشی با این چاپگر چاپ می‌کند."
-
-#~ msgid "Number of columns on a page"
-#~ msgstr "تعداد ستون‌ها در یک صفحه"
-
-#, fuzzy
-#~ msgid "Billing label"
-#~ msgstr "برچسب اعلامی"
-
-#~ msgid ""
-#~ "HH:MM:SS or '%s'.\n"
-#~ "Use GMT."
-#~ msgstr ""
-#~ "‏HH:MM:SS یا «%s».‏\n"
-#~ "استفاده از وقت گرینیچ."
-
-#~ msgid ""
-#~ "Banner pages (start,end):\n"
-#~ "for example, '%s'"
-#~ msgstr ""
-#~ "صفحات عنوان (آغاز،پایان):\n"
-#~ "برای مثال، '%s'"
-
-#~ msgid "Landscape (%s or %s)"
-#~ msgstr "منظره‌ای (%s یا %s)"
-
-#~ msgid ""
-#~ "Number of document pages per\n"
-#~ "printed page: 1, 2, 4, 6, 9, or 16"
-#~ msgstr ""
-#~ "تعداد صفحات نوشتار در هر صفحه‌ی\n"
-#~ "چاپ شده: ۱، ۲، ۴، ۶، ۹، یا ۱۶"
-
-#~ msgid "Top margin in pt (1/72 in)"
-#~ msgstr "حاشیه‌ی بالا بر حسب پونت (۷۲/۱ اینچ)‏"
-
-#~ msgid "Left margin in pt (1/72 in)"
-#~ msgstr "حاشیه‌ی چپ بر حسب پونت (۷۲/۱ اینچ)‏"
-
-#~ msgid "Right margin in pt (1/72 in)"
-#~ msgstr "حاشیه‌ی راست به نقطه (۷۲/۱ اینچ)‏"
-
-#~ msgid "Bottom margin in pt (1/72 in)"
-#~ msgstr "حاشیه‌ی پایین بر حسب پونت (۷۲/۱ اینچ)‏"
-
-#~ msgid ""
-#~ "'%s', '%s', '%s'\n"
-#~ "'%s' or '%s'"
-#~ msgstr ""
-#~ "«‏%s»،‏ «%s»،‏ «%s»‏\n"
-#~ "«‏%s» یا «%s»"
-
-#~ msgid "Page label"
-#~ msgstr "برچسب صفحه"
-
-#~ msgid "Pretty-print text (%s or %s)"
-#~ msgstr "متن چاپ زیبا (%s یا %s)"
-
-#~ msgid "Scaling (percentage)"
-#~ msgstr "مقیاس (درصد)‏"
-
-#~ msgid "Word-wrapping (%s or %s)"
-#~ msgstr "پیچیدن واژه (%s یا %s)"
-
-#~ msgid "Option name"
-#~ msgstr "نام گزینه"
-
-#~ msgid "Value"
-#~ msgstr "مقدار"
-
-#~ msgid "Can't determine the printer model attached to this device."
-#~ msgstr "نمی‌توان مدل چاپگری را که به این دستگاه وصل شده تعیین کرد."
-
-#~ msgid "I don't know enough about this printer model to choose a driver."
-#~ msgstr ""
-#~ "اطلاعات این برنامه درباره‌ی مدل این چاپگر برای انتخاب گرداننده‌ کافی نیست."
-
-#~ msgid "Add queue option"
-#~ msgstr "افزودن گزینه‌ی صف"
-
-#~ msgid "Invalid option name"
-#~ msgstr "نام گزینه‌ی نامعتبر"
-
-#~ msgid "Value for this option"
-#~ msgstr "مقداری برای این گزینه"
-
-#~ msgid ""
-#~ "(this is the\n"
-#~ "recommended driver)"
-#~ msgstr ""
-#~ "(این گرداننده‌ی\n"
-#~ "توصیه شده است)"
-
-#~ msgid ""
-#~ "This driver requires Hewlett Packard's hpijs driver (available in the "
-#~ "hpijs package) which does not appear to be installed."
-#~ msgstr ""
-#~ "این گرداننده، به گرداننده‌ی hpijs هیولت پاکارد (موجود در بسته‌ی hpijs) "
-#~ "احتیاج دارد که به نظر نمی‌رسد نصب شده باشد."
-
-#~ msgid "Do you wish to use it anyway?"
-#~ msgstr "آیا می‌خواهید به هر حال از آن استفاده کنید؟"
-
-#~ msgid ""
-#~ "This driver requires the Omni Print Driver System, which does not appear "
-#~ "to be installed."
-#~ msgstr ""
-#~ "این گرداننده به سیستم گرداننده‌ی چاپ Omni احتیاج دارد که به نظر نمی‌رسد نصب "
-#~ "شده باشد."
-
-#~ msgid ""
-#~ "This driver requires the oki4drv daemon to be running, and it does not "
-#~ "appear to be."
-#~ msgstr ""
-#~ "این گرداننده احتیاج دارد که شبح oki4drv در حال اجرا باشد، که به نظر "
-#~ "نمی‌رسد این طور باشد."
-
-#~ msgid "Local Printer Device"
-#~ msgstr "دستگاه چاپگر محلی"
-
-#~ msgid "IPP Print Queue"
-#~ msgstr "صف چاپ IPP"
-
-#~ msgid "Unix Print Queue"
-#~ msgstr "صف چاپ یونیکس"
-
-#~ msgid "Windows Print Queue"
-#~ msgstr "صف چاپ ویندوز"
-
-#~ msgid ""
-#~ "SMB print queues require the \"smbclient\" program, which does not appear "
-#~ "to be installed."
-#~ msgstr ""
-#~ "صف‌های چاپ SMB به برنامه‌ی «smbclient» احتیاج دارند، که به نظر نمی‌رسد نصب "
-#~ "شده باشد."
-
-#~ msgid ""
-#~ "It is part of the \"samba-client\" package, as distributed by Red Hat."
-#~ msgstr "این بخشی از بسته‌ی «samba-client» است."
-
-#~ msgid "Do you wish to enable it anyway?"
-#~ msgstr "آیا می‌خواهید به هر حال آن را به کار بیاندازید؟"
-
-#~ msgid "Novell Print Queue"
-#~ msgstr "صف چاپ نوول"
-
-#~ msgid "It is part of the \"ncpfs\" package, as distributed by Red Hat."
-#~ msgstr "این بخشی از بسته‌ی «ncpfs» است."
-
-#~ msgid "Custom Command"
-#~ msgstr "فرمان سفارشی"
-
-#~ msgid "Postscript Printer"
-#~ msgstr "چاپگر پست‌اسکریپت"
-
-#~ msgid "Text Only Printer"
-#~ msgstr "چاپگر فقط متنی"
-
-#~ msgid "Raw Print Queue"
-#~ msgstr "صف چاپ خام"
-
-#~ msgid "Custom Filter"
-#~ msgstr "صافی سفارشی"
-
-#~ msgid "ERROR: No box named \"%s\" found.\n"
-#~ msgstr "خطا: جعبه‌ای به نام «%s» پیدا نشد.\n"
-
-#~ msgid "ERROR: box \"%s\" is not a writable interface.\n"
-#~ msgstr "خطا: جعبه‌ی «%s» یک واسط قابل نوشتن نیست.\n"
-
-#~ msgid "Send Form-Feed (FF)"
-#~ msgstr "فرستادن Form-Feed‏ (FF)"
-
-#~ msgid "Send End-of-Transmission (EOT)"
-#~ msgstr "فرستادن End-of-Transmission‏ (EOT)"
-
-#~ msgid "Assume Unknown Data is Text"
-#~ msgstr "فرض متن بودن داده‌های ناشناخته"
-
-#~ msgid "Prerender Postscript"
-#~ msgstr "پیش‌ترسیم پست‌اسکریپت"
-
-#~ msgid "Convert Text to Postscript"
-#~ msgstr "تبدیل متن به پست‌اسکریپت"
-
-#~ msgid "Effective Filter Locale"
-#~ msgstr "تنظیمات محلی صافی مؤثر"
-
-#~ msgid "Couldn't load driver information.\n"
-#~ msgstr "بار کردن اطلاعات گرداننده ممکن نبود.\n"
-
-#~ msgid "You must run printconf-backend as root."
-#~ msgstr "باید printconf-backend را با root اجرا کنید."
-
-#~ msgid "Sharing properties - %s"
-#~ msgstr "ویژگی‌های به‌اشتراک‌گذاری ـ %s"
-
-#~ msgid "All hosts"
-#~ msgstr "همه‌ی میزبان‌ها"
-
-#~ msgid "Network device %s"
-#~ msgstr "دستگاه شبکه‌ی %s"
-
-#~ msgid "Network devices %s"
-#~ msgstr "دستگاه‌های شبکه‌ی %s"
-
-#~ msgid "Network address %s"
-#~ msgstr "نشانی شبکه‌ی %s"
-
-#~ msgid "Add allowed hosts - %s"
-#~ msgstr "اضافه کردن میزبان‌های مجاز ـ %s"
-
-#~ msgid "Edit allowed hosts - %s"
-#~ msgstr "ویرایش میزبان‌های مجاز ـ %s"
-
-#~ msgid ""
-#~ "LPD connections will be accepted\n"
-#~ "on all interfaces, and jobs for\n"
-#~ "all queues will be accepted."
-#~ msgstr ""
-#~ "اتصال‌های LPD روی همه‌ی واسط‌ها\n"
-#~ "پذیرفته خواهند شد، و کار برای همه‌ی\n"
-#~ "صف‌ها پذیرفته خواهد شد."
-
-#~ msgid "Invalid network address"
-#~ msgstr "نشانی شبکه‌ی نامعتبر"
-
-#~ msgid "Invalid netmask"
-#~ msgstr "نقاب شبکه‌ی نامعتبر"
-
-#~ msgid "Invalid IP address"
-#~ msgstr "نشانی IP نامعتبر"
-
-#~ msgid "ASC_II text test page"
-#~ msgstr "صفحه‌ی آزمایشی با متن _اسکی"
-
-#~ msgid "Add a new option"
-#~ msgstr "اضافه کردن یک گزینه‌ی جدید"
-
-#~ msgid "Add a new queue"
-#~ msgstr "اضافه کردن یک صف جدید"
-
-#~ msgid "Add an allowed host"
-#~ msgstr "اضافه کردن یک میزبان مجاز"
-
-#~ msgid "Add/edit queue option"
-#~ msgstr "اضافه کردن/ویرایش گزینه‌ی صف"
-
-#~ msgid "Allowed hosts"
-#~ msgstr "میزبان‌های مجاز"
-
-#~ msgid "Apply changes"
-#~ msgstr "اعمال تغییرات"
-
-#~ msgid "At end of job:"
-#~ msgstr "در پایان کار:"
-
-#~ msgid "At start of job:"
-#~ msgstr "در آغاز کار:"
-
-#~ msgid "Autoselect driver"
-#~ msgstr "انتخاب خودکار گرداننده"
-
-#~ msgid "Banner pages"
-#~ msgstr "صفحات عنوان"
-
-#~ msgid "Big5 PostScript test page"
-#~ msgstr "صفحه‌ی آزمایشی پست‌اسکریپت Big5 (چینی)"
-
-#~ msgid "Choose the manufacturer"
-#~ msgstr "سازنده را انتخاب کنید"
-
-#~ msgid "Choose the queue type"
-#~ msgstr "نوع صف را انتخاب کنید"
-
-#~ msgid "Choose the type of queue you want to use"
-#~ msgstr "نوع صفی را که می‌خواهید استفاده کنید انتخاب کنید"
-
-#~ msgid "Choose which other computers may use this queue."
-#~ msgstr ""
-#~ "کامپیوتر‌های دیگری را که ممکن است از این صف استفاده کنند انتخاب کنید."
-
-#~ msgid "Edit the selected queue"
-#~ msgstr "ویرایش صف انتخاب شده"
-
-#~ msgid "Edit this host"
-#~ msgstr "ویرایش این میزبان"
-
-#~ msgid "Edit this option"
-#~ msgstr "ویرایش این گزینه"
-
-#~ msgid "Enable _LPD protocol"
-#~ msgstr "به کار انداختن قرارداد LPD"
-
-#~ msgid "Enter the device you would like to use."
-#~ msgstr "دستگاهی را که می‌خواهید استفاده کنید وارد کنید."
-
-#~ msgid "Finish, and create the new print queue"
-#~ msgstr "پایان، و ایجاد صف چاپ جدید"
-
-#~ msgid "For example: /dev/lp0"
-#~ msgstr "برای مثال: ‎/dev/lp0"
-
-#~ msgid "Generic"
-#~ msgstr "عام"
-
-#~ msgid "IP port number (often 9100)"
-#~ msgstr "شماره‌ی درگاه IP (اغلب ۹۱۰۰)"
-
-#~ msgid ""
-#~ "If you like, you can enter a description of the printer to help you "
-#~ "identify it more easily."
-#~ msgstr ""
-#~ "اگر دوست دارید می‌توانید برای کمک به شناسایی آسان‌تر چاپگر، شرحی از آن وارد "
-#~ "کنید."
-
-#~ msgid "Imageable Area"
-#~ msgstr "ناحیه‌ی قابل چاپ"
-
-#~ msgid "JPE_G test"
-#~ msgstr "آزما_یش JPEG"
-
-#~ msgid "Japanese EUC PostScript test page"
-#~ msgstr "صفحه‌ی آزمایشی پست‌اسکریپت EUC ژاپنی"
-
-#~ msgid "Japanese JIS PostScript test page"
-#~ msgstr "صفحه‌ی آزمایشی پست‌اسکریپت JIS ژاپنی"
-
-#~ msgid "Japanese SJIS PostScript test page"
-#~ msgstr "صفحه‌ی آزمایشی پست‌اسکریپت SJIS ژاپنی"
-
-#~ msgid "Japanese _EUC text test page"
-#~ msgstr "صفحه‌ی آزمایشی متن EUC ژا_پنی"
-
-#~ msgid "Japanese _JIS text test page"
-#~ msgstr "صفحه‌ی آزمایشی متن JIS ژ_اپنی"
-
-#~ msgid "Japanese _SJIS text test page"
-#~ msgstr "صفحه‌ی آزمایشی متن SJIS ژاپن_ی"
-
-#~ msgid "Linefeed translation"
-#~ msgstr "تبدیل تغذیه‌ی‌خط"
-
-#~ msgid "Network _devices"
-#~ msgstr "_دستگاه‌های شبکه"
-
-#~ msgid "Networked CUPS (_IPP)"
-#~ msgstr "‏CUPS _شبکه‌ای (IPP)"
-
-#~ msgid "Networked _JetDirect"
-#~ msgstr "‏JetDirect شبکه‌ای"
-
-#~ msgid "Networked _Novell (NCP)"
-#~ msgstr "_نوول شبکه‌ای (NCP)"
-
-#~ msgid "Networked _UNIX (LPD)"
-#~ msgstr "_یونیکس شبکه‌ای (LPD)"
-
-#~ msgid "Networked _Windows (SMB)"
-#~ msgstr "_ویندوز شبکه‌ای (SMB)"
-
-#~ msgid ""
-#~ "On the following screens, you will be asked to provide basic information "
-#~ "for adding a new print queue.  You will be able to edit the more advanced "
-#~ "options afterwards.\n"
-#~ "\n"
-#~ "Nothing will be done to your settings until you hit \"Finish\" on the "
-#~ "last screen."
-#~ msgstr ""
-#~ "در صفحه‌های بعد، از شما خواسته خواهد شد که اطلاعات پایه‌ای را برای اضافه "
-#~ "کردن یک صف چاپ جدید ارائه کنید.  شما بعداً خواهید توانست گزینه‌های پیشرفته "
-#~ "را ویرایش کنید.\n"
-#~ "\n"
-#~ "تا وقتی که «پایان» را در آخرین صفحه فشار ندهید، هیچ تغییری در تنظیمات شما "
-#~ "داده نخواهد شد."
-
-#~ msgid "Path:"
-#~ msgstr "مسیر:"
-
-#~ msgid "Patience"
-#~ msgstr "بردباری"
-
-#~ msgid ""
-#~ "Please enter a name for this queue.  Choose a short name that begins with "
-#~ "a letter and contains no spaces."
-#~ msgstr ""
-#~ "لطفاً نامی برای این صف وارد کنید.  نام کوتاهی انتخاب کنید که با یک حرف "
-#~ "شروع شود و هیچ فاصله‌ای نداشته باشد."
-
-#~ msgid "Printer hostname or IP address"
-#~ msgstr "نام میزبان یا نشانی IP چاپگر"
-
-#~ msgid "Printer/driver _notes..."
-#~ msgstr "_یادداشت‌های گرداننده/چاپگر..."
-
-#~ msgid "Queue type"
-#~ msgstr "نوع صف"
-
-#~ msgid "Queue type:"
-#~ msgstr "نوع صف:"
-
-#~ msgid "Remove this host from the list"
-#~ msgstr "حذف این میزبان از فهرست"
-
-#~ msgid "Remove this option"
-#~ msgstr "حذف این گزینه"
-
-#~ msgid "Rescan devices"
-#~ msgstr "پویش مجدد دستگاه‌ها"
-
-#~ msgid "Select a queue type:"
-#~ msgstr "یک نوع صف انتخاب کنید:"
-
-#~ msgid "Select the appropriate printer manufacturer and model."
-#~ msgstr "مدل و سازنده‌ی مربوط به چاپگر را انتخاب کنید."
-
-#~ msgid "Set as de_fault"
-#~ msgstr "تنظیم به عنوان پی_ش‌فرض"
-
-#~ msgid "Set as default queue"
-#~ msgstr "تنظیم به عنوان صف پیش‌فرض"
-
-#~ msgid "Short description:"
-#~ msgstr "شرح کوتاه:"
-
-#~ msgid "Short description: "
-#~ msgstr "شرح کوتاه: "
-
-#~ msgid "Single _IP address"
-#~ msgstr "_نشانی IP تنها"
-
-#~ msgid "Strict RFC1179 compliance"
-#~ msgstr "سازگاری اکید با RFC 1179"
-
-#~ msgid "These settings are system-wide."
-#~ msgstr "این تنظیمات در کل سیستم یکسان هستند"
-
-#~ msgid "This allows older systems to print to this machine"
-#~ msgstr "سیستم‌های قدیمی را‌ قادر می‌سازد که در این ماشین چاپ کنند"
-
-#~ msgid "This enables CUPS IPP browsing"
-#~ msgstr "مرور CUPS IPP را به کار می‌اندازد"
-
-#~ msgid ""
-#~ "This is the name of the queue.  It must begin with a letter and contain "
-#~ "no spaces."
-#~ msgstr "این نام صف است.  باید با یک حرف شروع شود و هیچ فاصله‌ای نداشته باشد."
-
-#~ msgid "Type in an IP address"
-#~ msgstr "یک نشانی IP وارد کنید"
-
-#~ msgid "Type in the netmask, or the CIDR mask length"
-#~ msgstr "نقاب‌شبکه، یا طول نقاب CIDR را وارد کنید"
-
-#~ msgid "Type in the share name"
-#~ msgstr "نام اشتراک را وارد کنید"
-
-#~ msgid "Use control-F to search"
-#~ msgstr "برای جستجو از کلید مهار+F استفاده کنید"
-
-#~ msgid "_A4 PostScript test page"
-#~ msgstr "صفحه‌ی آزمایشی _پست‌اسکریپت A4"
-
-#~ msgid "_Add..."
-#~ msgstr "ا_ضافه کردن..."
-
-#~ msgid "_All hosts"
-#~ msgstr "_همه‌ی میزبان‌ها"
-
-#~ msgid "_Apply"
-#~ msgstr "ا_عمال"
-
-#~ msgid "_Automatically find remote shared queues"
-#~ msgstr "پیدا کردن _خودکار صف‌های اشتراکی دوردست"
-
-#~ msgid "_Big5 text test page"
-#~ msgstr "_صفحه‌ی آزمایشی متن Big5 (چینی)"
-
-#~ msgid "_CUPS test page"
-#~ msgstr "ص_فحه‌ی آزمایشی CUPS"
-
-#~ msgid "_Contents"
-#~ msgstr "_محتویات"
-
-#~ msgid "_Custom device"
-#~ msgstr "دستگاه س_فارشی"
-
-#~ msgid "_Delete queue"
-#~ msgstr "_حذف صف"
-
-#~ msgid "_Duplex test"
-#~ msgstr "آزمایش دو_تایی"
-
-#~ msgid "_Edit queue"
-#~ msgstr "_ویرایش صف"
-
-#~ msgid "_Edit..."
-#~ msgstr "_ویرایش..."
-
-#~ msgid "_Import PPD..."
-#~ msgstr "وار_د کردن PDD..."
-
-#~ msgid "_Network address"
-#~ msgstr "نشانی شب_که‌ای"
-
-#~ msgid "_Notes..."
-#~ msgstr "یاد_داشت‌ها..."
-
-#~ msgid "_Remove"
-#~ msgstr "_حذف"
-
-#~ msgid "_Rescan devices"
-#~ msgstr "_پویش مجدد دستگاه‌ها"
-
-#~ msgid "_This queue is available to other computers"
-#~ msgstr "ا_ین صف برای کامپیوتر‌های دیگر موجود است"
-
-#~ msgid "_US Letter PostScript test page"
-#~ msgstr "_صفحه‌ی آزمایشی پست‌اسکریپت در قالب کاغذ نامه‌ی امریکایی"
-
-#~ msgid "_classified"
-#~ msgstr "_طبقه‌بندی شده"
-
-#~ msgid "_none"
-#~ msgstr "_هیچ‌کدام"
-
-#~ msgid "_secret"
-#~ msgstr "_سرّی"
-
-#~ msgid "_standard"
-#~ msgstr "_عادی"
-
-#~ msgid "_topsecret"
-#~ msgstr "_به‌کلی سرّی"
-
-#~ msgid "_unclassified"
-#~ msgstr "طبقه‌بندی _نشده"
-
-#~ msgid "c_onfidential"
-#~ msgstr "_محرمانه"
-
-#~ msgid "ipp"
-#~ msgstr "ipp"
-
-#~ msgid "jetdirect"
-#~ msgstr "jetdirect"
-
-#~ msgid "lpd"
-#~ msgstr "lpd"
-
-#~ msgid "ncp"
-#~ msgstr "ncp"
