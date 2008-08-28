@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
 "POT-Creation-Date: 2008-06-27 18:04+0100\n"
-"PO-Revision-Date: 2008-05-18 23:43+0200\n"
+"PO-Revision-Date: 2008-08-28 01:25+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -1965,7 +1965,7 @@ msgstr "Nie"
 
 #: ../troubleshoot/PrintTestPage.py:287
 msgid "Error submitting test page"
-msgstr ""
+msgstr "Błąd podczas wysyłania strony próbnej"
 
 #: ../troubleshoot/QueueNotEnabled.py:57
 #: ../troubleshoot/QueueRejectingJobs.py:67
@@ -2275,9 +2275,3 @@ msgstr "Zarządzanie zadaniami wydruku"
 #: ../my-default-printer.desktop.in.h:2
 msgid "Select default printer"
 msgstr "Wybór domyślnej drukarki"
-
-#~ msgid "Debug logging was already disabled."
-#~ msgstr "Dziennik debugowania jest już wyłączony."
-
-#~ msgid "Password required"
-#~ msgstr "Wymagane jest hasło"
