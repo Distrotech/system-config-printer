@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: system-config-printer\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
 "POT-Creation-Date: 2008-09-25 17:19+0000\n"
-"PO-Revision-Date: 2008-09-25 20:08+0100\n"
+"PO-Revision-Date: 2008-10-12 17:45+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -1513,9 +1513,9 @@ msgstr "system-config-printer"
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander\n"
+"Magnus Larsson\n"
 "Christian Rose\n"
 "Magnus Glantz\n"
-"Magnus Larsson\n"
 "\n"
 "Skicka synpunkter på översättningen till\n"
 "tp-sv@listor.tp-sv.se"
@@ -2030,7 +2030,7 @@ msgstr "%d timmar och %d minuter sedan"
 
 #: ../applet.py:588
 msgid "a minute ago"
-msgstr "en minuter sedan"
+msgstr "en minut sedan"
 
 #: ../applet.py:590
 #, python-format
