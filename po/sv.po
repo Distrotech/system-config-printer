@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-printer\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
-"POT-Creation-Date: 2008-09-25 17:19+0000\n"
-"PO-Revision-Date: 2008-10-12 17:45+0100\n"
+"POT-Creation-Date: 2008-11-16 13:18+0000\n"
+"PO-Revision-Date: 2008-12-01 23:35+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -971,7 +971,7 @@ msgstr "Felpolicy: \t"
 
 #: ../system-config-printer.glade.h:114
 msgid "Find _Queue..."
-msgstr "Sök _kö..."
+msgstr "Sök k_ö..."
 
 #: ../system-config-printer.glade.h:115
 msgid "Finishings:"
@@ -1124,7 +1124,7 @@ msgstr "Nytt namn för skrivaren"
 
 #: ../system-config-printer.glade.h:158
 msgid "No, I do not accept this license"
-msgstr "Nej, jag accepterar inte denna licens"
+msgstr "Nej, jag godkänner inte denna licens"
 
 #: ../system-config-printer.glade.h:159
 msgid ""
@@ -1445,7 +1445,7 @@ msgstr "Textradbrytning"
 
 #: ../system-config-printer.glade.h:260
 msgid "Yes, I accept this license"
-msgstr "Ja, jag accepterar denna licens"
+msgstr "Ja, jag godkänner denna licens"
 
 #: ../system-config-printer.glade.h:261
 msgid "_Connect..."
