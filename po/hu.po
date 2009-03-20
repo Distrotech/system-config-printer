@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
-"POT-Creation-Date: 2008-01-16 10:31+0000\n"
-"PO-Revision-Date: 2006-09-14 00:17+0200\n"
-"Last-Translator: Arpad Biro <biro_arpad@yahoo.com>\n"
+"POT-Creation-Date: 2009-02-24 01:18+0000\n"
+"PO-Revision-Date: 2009-02-24 10:45+0100\n"
+"Last-Translator: KAMI <kami911@gmail.com>\n"
 "Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,86 +42,88 @@ msgstr "Ismeretlen"
 msgid "Conflicts with:"
 msgstr "Ütközik ezzel:"
 
-#: ../system-config-printer.py:213
+#: ../system-config-printer.py:214
 msgid "Copyright 2006 Red Hat, Inc."
 msgstr "Copyright 2006 Red Hat, Inc."
 
-#: ../system-config-printer.py:249
+#: ../system-config-printer.py:250
 msgid "Server Settings"
 msgstr "Kiszolgáló-beállítások"
 
-#: ../system-config-printer.py:258 ../system-config-printer.py:260
+#: ../system-config-printer.py:259
+#: ../system-config-printer.py:261
 msgid "Members of this Class"
 msgstr "Ezen osztály tagjai"
 
-#: ../system-config-printer.py:259 ../system-config-printer.py:261
+#: ../system-config-printer.py:260
+#: ../system-config-printer.py:262
 msgid "Others"
 msgstr "Többi"
 
-#: ../system-config-printer.py:262
+#: ../system-config-printer.py:263
 msgid "Devices"
 msgstr "Eszközök"
 
-#: ../system-config-printer.py:263
+#: ../system-config-printer.py:264
 msgid "Makes"
 msgstr "Típusok"
 
-#: ../system-config-printer.py:264
+#: ../system-config-printer.py:265
 msgid "Models"
 msgstr "Modellek"
 
-#: ../system-config-printer.py:265
+#: ../system-config-printer.py:266
 msgid "Drivers"
 msgstr "Meghajtóprogramok"
 
-#: ../system-config-printer.py:266
+#: ../system-config-printer.py:267
 msgid "Users"
 msgstr "Felhasználók"
 
-#: ../system-config-printer.py:277
+#: ../system-config-printer.py:278
 msgid "PostScript Printer Description (*.ppd[.gz])"
 msgstr "PostScript-nyomtatóleírás (*.ppd[.gz])"
 
 #. SMB list columns
-#: ../system-config-printer.py:297
+#: ../system-config-printer.py:298
 msgid "Share"
 msgstr "Megosztás"
 
-#: ../system-config-printer.py:303
+#: ../system-config-printer.py:304
 msgid "Comment"
 msgstr "Megjegyzés"
 
-#: ../system-config-printer.py:360
+#: ../system-config-printer.py:361
 #, python-format
 msgid "Printer configuration - %s"
 msgstr "Nyomtató beállítása - %s"
 
-#: ../system-config-printer.py:363
+#: ../system-config-printer.py:364
 #, python-format
 msgid "Connected to %s"
 msgstr "Csatlakoztatva ide: %s"
 
-#: ../system-config-printer.py:365
+#: ../system-config-printer.py:366
 msgid "Not connected"
 msgstr "Nincs csatlakoztatva"
 
-#: ../system-config-printer.py:441
+#: ../system-config-printer.py:442
 msgid "Local Printers"
 msgstr "Helyi nyomtatók"
 
-#: ../system-config-printer.py:442
+#: ../system-config-printer.py:443
 msgid "Local Classes"
 msgstr "Helyi osztályok"
 
-#: ../system-config-printer.py:443
+#: ../system-config-printer.py:444
 msgid "Remote Printers"
 msgstr "Távoli nyomtatók"
 
-#: ../system-config-printer.py:444
+#: ../system-config-printer.py:445
 msgid "Remote Classes"
 msgstr "Távoli osztályok"
 
-#: ../system-config-printer.py:523
+#: ../system-config-printer.py:535
 #, python-format
 msgid ""
 "Connecting to Server:\n"
@@ -130,7 +132,7 @@ msgstr ""
 "Csatlakozás ehhez a kiszolgálóhoz:\n"
 "%s"
 
-#: ../system-config-printer.py:840
+#: ../system-config-printer.py:854
 msgid ""
 "There are conflicting options.\n"
 "Changes can only be applied after\n"
@@ -140,181 +142,176 @@ msgstr ""
 "A módosítások csak az ütközések\n"
 "feloldása után léphetnek életbe."
 
-#: ../system-config-printer.py:866 ../system-config-printer.py:882
+#: ../system-config-printer.py:880
+#: ../system-config-printer.py:896
 msgid "Not authorized"
 msgstr "Nincs jogosultság"
 
-#: ../system-config-printer.py:867
+#: ../system-config-printer.py:881
 msgid "The password may be incorrect."
 msgstr "Lehetséges, hogy helytelen a jelszó."
 
-#: ../system-config-printer.py:870 ../system-config-printer.py:901
+#: ../system-config-printer.py:884
+#: ../system-config-printer.py:915
 msgid "CUPS server error"
 msgstr "CUPS-kiszolgálóhiba"
 
-#: ../system-config-printer.py:871
+#: ../system-config-printer.py:885
 #, python-format
 msgid "There was an error during the CUPS operation: '%s'."
 msgstr "Hiba történt a CUPS-művelet közben: \"%s\"."
 
-#: ../system-config-printer.py:883
-msgid ""
-"The password may be incorrect, or the server may be configured to deny "
-"remote administration."
-msgstr ""
-
-#: ../system-config-printer.py:888
-msgid "Bad request"
-msgstr ""
-
-#: ../system-config-printer.py:890
-#, fuzzy
-msgid "Not found"
-msgstr "Nincs csatlakoztatva"
-
-#: ../system-config-printer.py:892
-msgid "Request timeout"
-msgstr ""
-
-#: ../system-config-printer.py:894
-msgid "Upgrade required"
-msgstr ""
-
-#: ../system-config-printer.py:896
-#, fuzzy
-msgid "Server error"
-msgstr "CUPS-kiszolgálóhiba"
-
-#: ../system-config-printer.py:898
-#, python-format
-msgid "status %d"
+#: ../system-config-printer.py:897
+msgid "The password may be incorrect, or the server may be configured to deny remote administration."
 msgstr ""
 
 #: ../system-config-printer.py:902
+msgid "Bad request"
+msgstr "Helytelen kérelem"
+
+#: ../system-config-printer.py:904
+msgid "Not found"
+msgstr "Nem található"
+
+#: ../system-config-printer.py:906
+msgid "Request timeout"
+msgstr "Kérelem-időtúllépés"
+
+#: ../system-config-printer.py:908
+msgid "Upgrade required"
+msgstr "Frissítés szükséges"
+
+#: ../system-config-printer.py:910
+msgid "Server error"
+msgstr "Kiszolgálóhiba"
+
+#: ../system-config-printer.py:912
+#, python-format
+msgid "status %d"
+msgstr "állapot: %d"
+
+#: ../system-config-printer.py:916
 #, python-format
 msgid "There was an HTTP error: %s."
-msgstr ""
+msgstr "HTTP-hiba történt: %s."
 
-#: ../system-config-printer.py:925
+#: ../system-config-printer.py:939
 msgid "This will delete this class!"
 msgstr "Ez az osztály így törlődni fog."
 
-#: ../system-config-printer.py:926
+#: ../system-config-printer.py:940
 msgid "Proceed anyway?"
 msgstr "Szeretné mégis folytatni?"
 
-#: ../system-config-printer.py:1047
+#: ../system-config-printer.py:1069
 msgid "Submitted"
 msgstr "Elküldve"
 
-#: ../system-config-printer.py:1048
+#: ../system-config-printer.py:1070
 #, python-format
 msgid "Test page submitted as job %d"
 msgstr "A tesztlap elküldve a következő feladat-azonosítóval: %d"
 
-#: ../system-config-printer.py:1058
+#: ../system-config-printer.py:1080
 msgid "Not possible"
 msgstr "Nem lehetséges"
 
-#: ../system-config-printer.py:1059
-msgid ""
-"The remote server did not accept the print job, most likely because the "
-"printer is not shared."
-msgstr ""
-"A távoli nyomtató nem fogadta el a nyomtatási feladatot - valószínűleg "
-"azért, mert nincs megosztva a nyomtató."
+#: ../system-config-printer.py:1081
+msgid "The remote server did not accept the print job, most likely because the printer is not shared."
+msgstr "A távoli nyomtató nem fogadta el a nyomtatási feladatot - valószínűleg azért, mert nincs megosztva a nyomtató."
 
-#: ../system-config-printer.py:1173
+#: ../system-config-printer.py:1184
 msgid "This is the default printer"
 msgstr "Ez az alapértelmezett nyomtató"
 
-#: ../system-config-printer.py:1175
+#: ../system-config-printer.py:1186
 #, python-format
 msgid "Default printer is %s"
 msgstr "Az alapértelmezett nyomtató: %s"
 
-#: ../system-config-printer.py:1178
+#: ../system-config-printer.py:1189
 msgid "No default printer set."
 msgstr "Nincs beállítva alapértelmezett nyomtató."
 
-#: ../system-config-printer.py:1250
+#: ../system-config-printer.py:1264
 msgid "Cancel Tests"
-msgstr ""
+msgstr "Feladat megszakítása"
 
-#: ../system-config-printer.py:1254 ../system-config-printer.glade.h:111
+#: ../system-config-printer.py:1268
+#: ../system-config-printer.glade.h:111
 msgid "Print Test Page"
 msgstr "Tesztlap nyomtatása"
 
-#: ../system-config-printer.py:1492
+#: ../system-config-printer.py:1506
 #, python-format
 msgid "Really delete %s %s?"
 msgstr "Valóban törli ezt: %s %s?"
 
-#: ../system-config-printer.py:1534 ../system-config-printer.glade.h:101
+#: ../system-config-printer.py:1548
+#: ../system-config-printer.glade.h:101
 msgid "New Printer"
 msgstr "Új nyomtató"
 
-#: ../system-config-printer.py:1543 ../system-config-printer.glade.h:100
+#: ../system-config-printer.py:1557
+#: ../system-config-printer.glade.h:100
 msgid "New Class"
 msgstr "Új osztály"
 
-#: ../system-config-printer.py:1555
+#: ../system-config-printer.py:1569
 msgid "Change Device URI"
 msgstr "Az eszköz URI-jának módosítása"
 
-#: ../system-config-printer.py:1569
+#: ../system-config-printer.py:1583
 msgid "Change Driver"
 msgstr "Meghajtóprogram módosítása"
 
-#: ../system-config-printer.py:1772
+#: ../system-config-printer.py:1786
 msgid "Other"
 msgstr "Egyéb"
 
-#: ../system-config-printer.py:1774
+#: ../system-config-printer.py:1788
 msgid " (Current)"
 msgstr " (Aktuális)"
 
-#: ../system-config-printer.py:1959
+#: ../system-config-printer.py:1973
 msgid "Verified"
 msgstr "Ellenőrzött"
 
-#: ../system-config-printer.py:1960
+#: ../system-config-printer.py:1974
 msgid "This print share is accessible."
 msgstr "Ez a nyomtatási megosztás elérhető."
 
-#: ../system-config-printer.py:1967
+#: ../system-config-printer.py:1981
 msgid "Inaccessible"
 msgstr "Nem elérhető"
 
-#: ../system-config-printer.py:1968
+#: ../system-config-printer.py:1982
 msgid "This print share is not accessible."
 msgstr "Ez a nyomtatási megosztás nem elérhető."
 
-#: ../system-config-printer.py:2210
+#: ../system-config-printer.py:2224
 msgid " (recommended)"
 msgstr " (javasolt)"
 
-#: ../system-config-printer.py:2252
+#: ../system-config-printer.py:2266
 msgid "This PPD is generated by foomatic."
 msgstr "Ezt a PPD-t a Foomatic készítette."
 
-#: ../system-config-printer.py:2255
-msgid ""
-"This PPD is provided by the manufacturer and is included with the foomatic "
-"package."
+#: ../system-config-printer.py:2269
+msgid "This PPD is provided by the manufacturer and is included with the foomatic package."
 msgstr "Ezt a PPD-t a gyártó biztosítja és része a Foomatic csomagnak."
 
-#: ../system-config-printer.py:2263
+#: ../system-config-printer.py:2277
 msgid "This PPD is provided by CUPS."
 msgstr "Ezt a PPD-t a CUPS biztosítja."
 
 #. XXX
-#: ../system-config-printer.py:2305
+#: ../system-config-printer.py:2319
 #, python-format
 msgid "Going to create a new class %s."
 msgstr "Új osztály (%s) létrehozása."
 
-#: ../system-config-printer.py:2320
+#: ../system-config-printer.py:2333
 #, python-format
 msgid ""
 "Going to create a new printer %s at\n"
@@ -323,40 +320,37 @@ msgstr ""
 "Új nyomtató (%s) létrehozása itt:\n"
 "%s.\n"
 
-#: ../system-config-printer.py:2338
+#: ../system-config-printer.py:2351
 msgid "Database error"
-msgstr ""
+msgstr "Adatbázis-hiba"
 
-#: ../system-config-printer.py:2339
+#: ../system-config-printer.py:2352
 #, python-format
 msgid "The '%s' driver cannot be used with printer '%s %s'."
-msgstr ""
+msgstr "„%s” meghajtóprogram nem használható ezzel a nyomtatóval: „%s %s”."
 
 #. This printer references some XML that is not installed
 #. by default.  Point the user at the package they need
 #. to install.
-#: ../system-config-printer.py:2352
+#: ../system-config-printer.py:2365
 #, python-format
 msgid "You will need to install the '%s' package in order to use this driver."
-msgstr ""
+msgstr "A meghajtóprogram használatához telepíteni kell a(z) „%s” csomagot."
 
-#: ../system-config-printer.py:2620 ../system-config-printer.py:2627
+#: ../system-config-printer.py:2645
+#: ../system-config-printer.py:2652
 msgid "Missing driver"
-msgstr ""
+msgstr "Hiányzó meghajtóprogram"
 
-#: ../system-config-printer.py:2621
+#: ../system-config-printer.py:2646
 #, python-format
-msgid ""
-"Printer '%s' requires the %s package but it is not currently installed.  "
-"Please install it before using this printer."
-msgstr ""
+msgid "Printer '%s' requires the %s package but it is not currently installed.  Please install it before using this printer."
+msgstr "„%s” nyomtatóhoz szükség van „%s” programra, de az jelenleg nincs telepítve. A nyomtató használata előtt telepítse azt."
 
-#: ../system-config-printer.py:2628
+#: ../system-config-printer.py:2653
 #, python-format
-msgid ""
-"Printer '%s' requires the '%s' program but it is not currently installed.  "
-"Please install it before using this printer."
-msgstr ""
+msgid "Printer '%s' requires the '%s' program but it is not currently installed.  Please install it before using this printer."
+msgstr "„%s” nyomtatóhoz szükség van „%s” programra, de az jelenleg nincs telepítve. A nyomtató használata előtt telepítse azt."
 
 #: ../system-config-printer.glade.h:1
 msgid " PPD "
@@ -490,8 +484,7 @@ msgstr "Távoli adminisztráció engedélyezése"
 
 #: ../system-config-printer.glade.h:33
 msgid "Allow users to cancel any job (not just their own)"
-msgstr ""
-"A felhasználók bármely feladatot szakíthassák meg (ne csak a sajátjaikat)"
+msgstr "A felhasználók bármely feladatot szakíthassák meg (ne csak a sajátjaikat)"
 
 #: ../system-config-printer.glade.h:34
 msgid "Apply"
@@ -677,8 +670,7 @@ msgstr "Gépnév"
 # at the same time.
 #: ../system-config-printer.glade.h:87
 msgid "Human-readable description such as \"HP LaserJet with Duplexer\""
-msgstr ""
-"Ember által olvasható leírás, például \"HP LaserJet kétoldalas nyomtatással\""
+msgstr "Ember által olvasható leírás, például \"HP LaserJet kétoldalas nyomtatással\""
 
 #: ../system-config-printer.glade.h:88
 msgid "Human-readable location such as \"Lab 1\""
@@ -714,9 +706,7 @@ msgstr "Típus és modell:"
 
 #: ../system-config-printer.glade.h:96
 msgid "May contain any printable characters except \"/\", \"#\", and space"
-msgstr ""
-"Tartalmazhatja bármely nyomtatható karaktert, kivéve ezeket: \"/\", \"#\", "
-"szóköz"
+msgstr "Tartalmazhatja bármely nyomtatható karaktert, kivéve ezeket: \"/\", \"#\", szóköz"
 
 #: ../system-config-printer.glade.h:97
 msgid "Members"
@@ -763,14 +753,8 @@ msgid "Port number"
 msgstr "Portszám"
 
 #: ../system-config-printer.glade.h:110
-msgid ""
-"PostScript Printer Description (PPD) files can often found on the driver "
-"disk that comes with the printer. For PostScript printers they are often "
-"part of the Windows<sup>®</sup> driver."
-msgstr ""
-"A PostScript-nyomtatóleírási (PPD-) fájlok gyakran megtalálhatók a "
-"nyomtatóval kapott meghajtóprogram-lemezen. PostScript-nyomtatók esetében "
-"ezek a fájlok gyakran részei a windowsos<sup>®</sup> meghajtóprogramnak."
+msgid "PostScript Printer Description (PPD) files can often found on the driver disk that comes with the printer. For PostScript printers they are often part of the Windows<sup>®</sup> driver."
+msgstr "A PostScript-nyomtatóleírási (PPD-) fájlok gyakran megtalálhatók a nyomtatóval kapott meghajtóprogram-lemezen. PostScript-nyomtatók esetében ezek a fájlok gyakran részei a windowsos<sup>®</sup> meghajtóprogramnak."
 
 #: ../system-config-printer.glade.h:112
 msgid "Printer"
@@ -858,36 +842,16 @@ msgid "System-Config-Printer %s"
 msgstr "System-Config-Printer %s"
 
 #: ../system-config-printer.glade.h:134
-msgid ""
-"The foomatic printer database contains various manufacturer provided "
-"PostScript Printer Description (PPD) files and also can generate PPD files "
-"for a large number of (non PostScript) printers. But in general manufacturer "
-"provided PPD files provide better access to the specific features of the "
-"printer."
-msgstr ""
-"A Foomatic nyomtató-adatbázis különféle, a gyártók által biztosított "
-"PostScript-nyomtatóleírási (PPD-) fájlokat tartalmaz, továbbá számos (nem "
-"PostScript-) nyomtatóhoz tud PPD-fájlt készíteni. Általában a gyártó által "
-"adott PPD-fájlok jobban kihasználják a nyomtató képességeit."
+msgid "The foomatic printer database contains various manufacturer provided PostScript Printer Description (PPD) files and also can generate PPD files for a large number of (non PostScript) printers. But in general manufacturer provided PPD files provide better access to the specific features of the printer."
+msgstr "A Foomatic nyomtató-adatbázis különféle, a gyártók által biztosított PostScript-nyomtatóleírási (PPD-) fájlokat tartalmaz, továbbá számos (nem PostScript-) nyomtatóhoz tud PPD-fájlt készíteni. Általában a gyártó által adott PPD-fájlok jobban kihasználják a nyomtató képességeit."
 
 #: ../system-config-printer.glade.h:135
-msgid ""
-"This is done by assuming that options with the same name do have the same "
-"meaning. Settings of options that are not present in the new PPD will be "
-"lost and options only present in the new PPD will be set to default."
-msgstr ""
-"Ez annak feltételezésével történik, hogy az azonos nevű beállításoknak a "
-"jelentésük is azonos. Azok a beállítások elvesznek, amelyek az új PPD-ben "
-"nincsenek jelen; amelyek pedig csak az új PPD-ben szerepelnek, az "
-"alapértelmezett értéket kapják."
+msgid "This is done by assuming that options with the same name do have the same meaning. Settings of options that are not present in the new PPD will be lost and options only present in the new PPD will be set to default."
+msgstr "Ez annak feltételezésével történik, hogy az azonos nevű beállításoknak a jelentésük is azonos. Azok a beállítások elvesznek, amelyek az új PPD-ben nincsenek jelen; amelyek pedig csak az új PPD-ben szerepelnek, az alapértelmezett értéket kapják."
 
 #: ../system-config-printer.glade.h:136
-msgid ""
-"This way all current option settings will be lost. The default settings of "
-"the new PPD will be used. "
-msgstr ""
-"Így az összes jelenlegi beállítás elvész. Az új PPD alapértelmezett "
-"beállításai lesznek használva. "
+msgid "This way all current option settings will be lost. The default settings of the new PPD will be used. "
+msgstr "Így az összes jelenlegi beállítás elvész. Az új PPD alapértelmezett beállításai lesznek használva. "
 
 #: ../system-config-printer.glade.h:137
 msgid "Try to copy the option settings over from the old PPD. "
@@ -895,8 +859,7 @@ msgstr "A régi PPD beállításainak átmásolásának megkísérlése. "
 
 #: ../system-config-printer.glade.h:138
 msgid "Use the new PPD (Postscript Printer Description) as is."
-msgstr ""
-"Az új PPD (PostScript-nyomtatóleírás) eredeti formában való használata."
+msgstr "Az új PPD (PostScript-nyomtatóleírás) eredeti formában való használata."
 
 #: ../system-config-printer.glade.h:139
 msgid "User name:"
@@ -939,11 +902,10 @@ msgid "none"
 msgstr "semmi"
 
 #: ../system-config-printer.desktop.in.h:1
-#, fuzzy
 msgid "Configure printers"
-msgstr "System-Config-Printer %s"
+msgstr "Nyomtatók beállítása"
 
 #: ../system-config-printer.desktop.in.h:2
-#, fuzzy
 msgid "Printing"
-msgstr "Nyomtató"
+msgstr "Nyomtatás"
+
