@@ -27,9 +27,11 @@ import sys
 from debug import *
 import asyncconn
 import config
+import cupshelpers
 import jobviewer
 import newprinter
 import ppdcache
+import ppdsloader
 import printerproperties
 
 CONFIG_BUS='org.fedoraproject.Config.Printing'
@@ -229,6 +231,7 @@ class ConfigPrinting(dbus.service.Object):
         self._pathn = 0
         self._jobapplet = None
         self._jobappletpath = None
+        self._ppdsloader = None
 
     def destroy (self):
         self._cupsconn.destroy ()
@@ -265,6 +268,64 @@ class ConfigPrinting(dbus.service.Object):
             self._jobappletpath = path
 
        return self._jobappletpath
+
+    @dbus.service.method(dbus_interface=CONFIG_IFACE,
+                         in_signature='sss', out_signature='a(ss)',
+                         async_callbacks=('reply_handler', 'error_handler'))
+    def GetDrivers(self, device_id, device_make_and_model, device_uri,
+                   reply_handler, error_handler):
+        self._killtimer.add_hold ()
+        if self._ppdsloader == None:
+            p = ppdsloader.PPDsLoader (device_id=device_id,
+                                       device_uri=device_uri,
+                                       parent=None)
+            self._ppdsloader = p
+            p.connect ('finished',
+                       lambda x: self._getdrivers (device_id,
+                                                   device_make_and_model,
+                                                   device_uri,
+                                                   reply_handler,
+                                                   error_handler))
+            p.run ()
+        else:
+            self._getdrivers (device_id,
+                              device_make_and_model,
+                              device_uri,
+                              reply_handler,
+                              error_handler)
+
+    def _getdrivers (self, device_id, device_make_and_model, device_uri,
+                     reply_handler, error_handler):
+        exc = self._ppdsloader.get_error ()
+        if exc:
+            error_handler (exc)
+            return
+
+        ppds = self._ppdsloader.get_ppds ()
+        if device_id:
+            id_dict = cupshelpers.parseDeviceID (device_id)
+        else:
+            id_dict = {}
+            (mfg,
+             mdl) = cupshelpers.ppds.ppdMakeModelSplit (device_make_and_model)
+            id_dict["MFG"] = mfg
+            id_dict["MDL"] = mdl
+            id_dict["DES"] = ""
+            id_dict["CMD"] = []
+
+        fit = ppds.getPPDNamesFromDeviceID (id_dict["MFG"],
+                                            id_dict["MDL"],
+                                            id_dict["DES"],
+                                            id_dict["CMD"],
+                                            device_uri,
+                                            device_make_and_model)
+
+        installed_files = self._ppdsloader.get_installed_files ()
+        ppdnamelist = ppds.orderPPDNamesByPreference (fit.keys (),
+                                                      installed_files)
+
+        self._killtimer.remove_hold ()
+        reply_handler (map (lambda x: (x, fit[x]), ppdnamelist))
 
 def _client_demo ():
     # Client demo
