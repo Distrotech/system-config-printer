@@ -31,7 +31,6 @@ import cupshelpers
 import jobviewer
 import newprinter
 import ppdcache
-import ppdsloader
 import printerproperties
 
 CONFIG_BUS='org.fedoraproject.Config.Printing'
@@ -66,10 +65,11 @@ class KillTimer:
         self._holds += 1
 
     def remove_hold (self):
-        self._holds -= 1
-        if self._holds == 0:
-            debugprint ("Kill timer started")
-            self._add_timeout ()
+        if self._holds > 0:
+            self._holds -= 1
+            if self._holds == 0:
+                debugprint ("Kill timer started")
+                self._add_timeout ()
 
     def alive (self):
         if self._holds == 0:
@@ -231,7 +231,8 @@ class ConfigPrinting(dbus.service.Object):
         self._pathn = 0
         self._jobapplet = None
         self._jobappletpath = None
-        self._ppdsloader = None
+        self._ppds = None
+        self._language = locale.getlocale (locale.LC_MESSAGES)[0]
 
     def destroy (self):
         self._cupsconn.destroy ()
@@ -275,57 +276,69 @@ class ConfigPrinting(dbus.service.Object):
     def GetDrivers(self, device_id, device_make_and_model, device_uri,
                    reply_handler, error_handler):
         self._killtimer.add_hold ()
-        if self._ppdsloader == None:
-            p = ppdsloader.PPDsLoader (device_id=device_id,
-                                       device_uri=device_uri,
-                                       parent=None)
-            self._ppdsloader = p
-            p.connect ('finished',
-                       lambda x: self._getdrivers (device_id,
-                                                   device_make_and_model,
-                                                   device_uri,
-                                                   reply_handler,
-                                                   error_handler))
-            p.run ()
+        data = { "device_id": device_id,
+                 "device_make_and_model": device_make_and_model,
+                 "device_uri": device_uri,
+                 "reply_handler": reply_handler,
+                 "error_handler": error_handler}
+        if self._ppds == None:
+            asyncconn.Connection (reply_handler=lambda conn, x:
+                                      self._cups_connect_reply (conn, x, data),
+                                  error_handler=lambda conn, exc:
+                                      error_handler (exc))
         else:
-            self._getdrivers (device_id,
-                              device_make_and_model,
-                              device_uri,
-                              reply_handler,
-                              error_handler)
+            self._getdrivers (data)
 
-    def _getdrivers (self, device_id, device_make_and_model, device_uri,
-                     reply_handler, error_handler):
-        exc = self._ppdsloader.get_error ()
-        if exc:
-            error_handler (exc)
-            return
+    def _cups_connect_reply (self, conn, UNUSED, data):
+        error_handler = data["error_handler"]
+        try:
+            conn.getPPDs2 (reply_handler=lambda conn, x:
+                               self._cups_getppds_reply (conn, x, data),
+                           error_handler=lambda conn, exc: error_handler (exc))
+        except AttributeError:
+            # getPPDs2 requires pycups >= 1.9.52
+            conn.getPPDs (reply_handler=lambda conn, x:
+                              self._cups_getppds_reply (conn, x, data),
+                          error_handler=lambda conn, exc: error_handler (exc))
 
-        ppds = self._ppdsloader.get_ppds ()
-        if device_id:
-            id_dict = cupshelpers.parseDeviceID (device_id)
-        else:
-            id_dict = {}
-            (mfg,
-             mdl) = cupshelpers.ppds.ppdMakeModelSplit (device_make_and_model)
-            id_dict["MFG"] = mfg
-            id_dict["MDL"] = mdl
-            id_dict["DES"] = ""
-            id_dict["CMD"] = []
+    def _cups_getppds_reply (self, conn, reply, data):
+        error_handler = data["error_handler"]
+        try:
+            device_id = data["device_id"]
+            device_make_and_model = data["device_make_and_model"]
+            device_uri = data["device_uri"]
+            reply_handler = data["reply_handler"]
+            if device_id:
+                id_dict = cupshelpers.parseDeviceID (device_id)
+            else:
+                id_dict = {}
+                (mfg,
+                 mdl) = cupshelpers.ppds.ppdMakeModelSplit (device_make_and_model)
+                id_dict["MFG"] = mfg
+                id_dict["MDL"] = mdl
+                id_dict["DES"] = ""
+                id_dict["CMD"] = []
 
-        fit = ppds.getPPDNamesFromDeviceID (id_dict["MFG"],
-                                            id_dict["MDL"],
-                                            id_dict["DES"],
-                                            id_dict["CMD"],
-                                            device_uri,
-                                            device_make_and_model)
+            ppds = cupshelpers.ppds.PPDs (reply, language=self._language)
+            self._ppds = ppds
+            fit = ppds.getPPDNamesFromDeviceID (id_dict["MFG"],
+                                                id_dict["MDL"],
+                                                id_dict["DES"],
+                                                id_dict["CMD"],
+                                                device_uri,
+                                                device_make_and_model)
 
-        installed_files = self._ppdsloader.get_installed_files ()
-        ppdnamelist = ppds.orderPPDNamesByPreference (fit.keys (),
-                                                      installed_files)
+            ppdnamelist = ppds.orderPPDNamesByPreference (fit.keys ())
 
-        self._killtimer.remove_hold ()
-        reply_handler (map (lambda x: (x, fit[x]), ppdnamelist))
+            self._killtimer.remove_hold ()
+            reply_handler (map (lambda x: (x, fit[x]), ppdnamelist))
+        except Exception, e:
+            try:
+                self._killtimer.remove_hold ()
+            except:
+                pass
+
+            error_handler (e)
 
 def _client_demo ():
     # Client demo
