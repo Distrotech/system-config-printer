@@ -51,6 +51,7 @@
 #include <libusb.h>
 #include <glib.h>
 #include <dirent.h>
+#include "config.h"
 
 #define DISABLED_REASON "Unplugged or turned off"
 #define MATCH_ONLY_DISABLED 1
@@ -1070,6 +1071,7 @@ is_ipp_uri (const char *uri)
 static int
 is_ippusb_uri(const char *uri)
 {
+#ifdef IPPUSBXD_PATH
   int pos = 0;
   if (strncmp("ipp://localhost:", uri, 16))
 	  return -1;
@@ -1111,6 +1113,10 @@ is_ippusb_uri(const char *uri)
     return -9;
 
   return 1;
+#else /* defined(IPPUSBXD_PATH) */
+  syslog (LOG_INFO, "not handling ippusb URI as built without support");
+  return 0;
+#endif /* defined(IPPUSBXD_PATH) */
 }
 
 static int
@@ -1990,47 +1996,10 @@ is_only_alphanum (const char *serial)
   return 1;
 }
 
-char *
-new_ippusb_call_str (const char *serial,
-                       const char *vid,
-		       const char *pid)
-{
-  size_t size = 0;
-  size_t sprintf_size = 0;
-  const char *vid_prefix = "ippusbxd -l -v ";
-  const char *pid_prefix = " -m ";
-  const char *serial_prefix = " -s ";
-  char *call = NULL;
-  size += strlen(vid_prefix);
-  size += strlen(vid);
-  size += strlen(pid_prefix);
-  size += strlen(pid);
-  size += strlen(serial_prefix);
-  size += strlen(serial);
-  size += 1; // \0
-
-  call = malloc(size * sizeof(*call));
-  if (call == NULL)
-    {
-      syslog (LOG_ERR, "Failed to alloc string for call");
-      exit (1);
-    }
-  sprintf_size = snprintf(call, size, "%s%s%s%s%s%s",
-   vid_prefix, vid,
-   pid_prefix, pid,
-   serial_prefix, serial);
-  if (sprintf_size >= size)
-    {
-      syslog (LOG_ERR, "Failed to create call string");
-      exit(1);
-    }
-
-  return call;
-}
-
 static char *
 do_launch_ippusb_driver (struct udev_device *dev)
 {
+#ifdef IPPUSBXD_PATH
   unsigned int port = 0;
   FILE *port_pipe;
   int scan_status;
@@ -2038,6 +2007,9 @@ do_launch_ippusb_driver (struct udev_device *dev)
   const char *vid;
   const char *pid;
   const char *serial;
+  pid_t child;
+  int pipefd[2];
+
   get_vidpidserial_from_parents (dev, &vid, &pid, &serial);
 
   if (!vid || !pid || !serial ||
@@ -2049,15 +2021,67 @@ do_launch_ippusb_driver (struct udev_device *dev)
       exit (1);
     }
 
-  char *ippusbxd_call_str = new_ippusb_call_str(serial, vid, pid);
-  port_pipe = popen(ippusbxd_call_str, "r");
-  if (port_pipe == NULL)
+  if (pipe (pipefd) == -1)
     {
-      syslog (LOG_ERR, "Failed to run ippusb driver");
+      syslog (LOG_ERR, "Failed to create pipe");
       exit (1);
     }
-  free(ippusbxd_call_str);
 
+  child = fork ();
+  if (child == -1)
+    {
+      syslog (LOG_ERR, "Failed to fork");
+      exit (1);
+    }
+
+  if (child == 0)
+    {
+      /* Child */
+      char *const argv[] = { IPPUSBXD_PATH,
+			     "-l",
+			     "-v", strdup (vid),
+			     "-m", strdup (pid),
+			     "-s", strdup (serial),
+			     NULL };
+      char *const envp[] = { NULL };
+      int devnull;
+
+      if (argv[3] == NULL ||
+	  argv[5] == NULL ||
+	  argv[7] == NULL)
+	/* strdup failed */
+	exit (1);
+
+      /* Close the read end */
+      close (pipefd[0]);
+
+      /* Set up the write end */
+      if (pipefd[1] != STDOUT_FILENO)
+	{
+	  dup2 (pipefd[1], STDOUT_FILENO);
+	  close (pipefd[1]);
+	}
+
+      devnull = open ("/dev/null", O_RDWR);
+      if (devnull != STDIN_FILENO)
+	dup2 (devnull, STDIN_FILENO);
+
+      if (devnull != STDERR_FILENO)
+	dup2 (devnull, STDERR_FILENO);
+
+      if (devnull != STDIN_FILENO &&
+	  devnull != STDERR_FILENO)
+	close (devnull);
+
+      setsid ();
+      execve (IPPUSBXD_PATH, argv, envp);
+      exit (1);
+    }
+
+  /* Close the write end */
+  close (pipefd[1]);
+
+  port_pipe = fdopen (pipefd[0], "r");
   scan_status = fscanf(port_pipe, "%u|", &port);
   if (scan_status != 1 || port == 0)
     {
@@ -2067,6 +2091,9 @@ do_launch_ippusb_driver (struct udev_device *dev)
 
   uri = new_ippusb_uri_string(dev, port);
   return uri;
+#else /* defined(IPPUSBXD_PATH) */
+  return NULL;
+#endif /* defined(IPPUSBXD_PATH) */
 }
 
 static int

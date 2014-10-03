@@ -1,5 +1,6 @@
 AC_INIT(system-config-printer, 1.5.1)
 AC_CONFIG_SRCDIR(system-config-printer.py)
+AC_CONFIG_HEADER(config.h)
 AM_INIT_AUTOMAKE([dist-xz dist-bzip2 subdir-objects 1.6])
 IT_PROG_INTLTOOL
 AM_GNU_GETTEXT([external])
@@ -73,6 +74,13 @@ if test "x$with_systemdsystemunitdir" != xno; then
         AC_SUBST([systemdsystemunitdir], [$with_systemdsystemunitdir])
 fi
 AM_CONDITIONAL(HAVE_SYSTEMD, [test -n "$with_systemdsystemunitdir" -a "x$with_systemdsystemunitdir" != xno ])
+
+AC_ARG_WITH([ippusbxd],
+	AS_HELP_STRING([--with-ippusbxd=PATH], [Path to ippusbxd binary]),
+	[], [with_ippusbxd=no])
+if test "x$with_ippusbxd" != xno; then
+	AC_DEFINE_UNQUOTED(IPPUSBXD_PATH, "$with_ippusbxd", Path to ippusbxd binary)
+fi
 
 ALL_LINGUAS="ar as bg bn_IN bn br bs ca cs cy da de el en_GB es et fa fi fr gu he hi hr hu hy id is it ja ka kn ko lo lv mai mk ml mr ms my nb nds nl nn or pa pl pt_BR pt ro ru si sk sl sr@latin sr sv ta te th tr uk vi zh_CN zh_TW"
 AC_CONFIG_FILES([
